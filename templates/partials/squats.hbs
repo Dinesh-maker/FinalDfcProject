@@ -1,0 +1,61 @@
+
+<script>
+
+let timer3 = 1 * 95;
+   let intervalId3 = null;
+   let audio3=new Audio('Squats.mp3');
+   let isStarted3 = 'false';
+   function updateTime3() {
+     let ele3 = document.getElementById('timer3')
+     if(timer3) {
+       const min = Math.floor(timer3 / 60);
+       const sec = timer3 % 60;
+       ele3.innerText = `${min} minutes:: ${sec} seconds`
+       timer3--;
+     } else {
+       clearInterval(intervalId3)
+       ele3.innerText = "Time completed"
+     }
+   }
+   
+   
+   function resetTime3(){
+     let ele3 = document.getElementById('timer3');
+     timer3 = 1*95;   
+    
+   }
+   
+   let reset3 = document.querySelector('#reset3');
+   reset3.addEventListener('click',() => {
+   console.log(isStarted3);
+   resetTime3();
+   if(isStarted3 === 'true'){
+   audioResetAuto3();
+   }
+   });
+   
+   
+   let start3 = document.querySelector('#start3');
+   start3.addEventListener('click',() => {
+     console.log("start button 3");
+   updateTime3();
+   isStarted3 = 'true';
+   intervalId3 = setInterval(updateTime3, 1000);
+   audioAuto3();
+    start3.disabled = true;
+   
+   });
+   
+   function audioResetAuto3()
+   {
+     audio3.currentTime = 0;
+     audio3.play();
+     
+   }
+   
+   function audioAuto3()
+   {
+     audio3=new Audio('Squats.mp3');
+     audio3.play();
+   }
+   </script>

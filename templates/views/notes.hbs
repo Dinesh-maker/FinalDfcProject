@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+ 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script src='http://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.3.200/pdf.js'></script>
+        <script src='http://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+        <script>     
+              window.onload = function() {
+                document.addEventListener('contextmenu', function(e){
+                    e.preventDefault();
+                    if(event.keyCode == 123) {
+                    disableEvent(e);
+                }
+                }, false);
+             function disableEvent(e) {
+                    if(e.stopPropagation) {
+                        e.stopPropagation();
+                    } else if(window.event) {
+                        window.event.cancelBubble = true;
+                    }
+                }
+            }
+
+            var thePdf = null;
+            var scale = 1;
+            function pdfLoad(pdfName,divName) {
+            $(document).contextmenu(function() { return false;});
+            pdfjsLib.getDocument(pdfName).promise.then(function(pdf) {
+                      thePdf = pdf;
+                      viewer = document.querySelector('#'+divName);
+                      for(page = 1; page <= pdf.numPages; page++) {
+                        canvas = document.createElement('canvas');
+                        viewer.appendChild(canvas);
+                        renderPage(page, canvas);
+                      }
+                  });
+                
+            }
+            pdfLoad('ragamock20.pdf','pdf1');
+            pdfLoad('ragamock19.pdf','pdf2');
+            pdfLoad('ragamock18.pdf','pdf3');
+                  function renderPage(pageNumber, canvas) {
+                      thePdf.getPage(pageNumber).then(function(page) {
+                        viewport = page.getViewport(scale);
+                        canvas.height = viewport.height;
+                        canvas.width = viewport.width;
+                        page.render({canvasContext: canvas.getContext('2d'), viewport: viewport});
+                  });
+                  }
+            </script>
+
+
+  <title>Live Classes </title>
+  <style type="text/css">
+
+    .pdfs{
+    width:50rem;
+    max-height: 28rem;
+    overflow: scroll;
+
+  
+   } 
+   canvas{
+     height: 20rem;
+    width: 20rem;
+   }
+
+    .nav-link{
+    font-family: 'Noto Sans JP', sans-serif; 
+    
+    font-weight: 700;
+    font-size: 18px;
+    margin-left: 1rem;
+  }   
+
+  .starting{
+        background-image: url('notes.jpg');
+         background-size: 1323px 230px;
+  }
+  @media (min-width: 992px) and (max-width: 1160px){
+    .nav-link{
+      margin-left: 0px;
+    }
+
+  }
+   .navbar-light .navbar-toggler {
+    color: rgb(234 222 222 / 50%);
+    border-color: rgb(243 231 231 / 99%);
+}
+  .Schedule{
+    color: blue; 
+    font-family: Arial,Helvetica,sans-serif; 
+    font-size: 25px;
+     font-weight: 800; 
+    text-shadow: 2px 2px 8px #00e1ff
+  }
+  .socialmedia {
+  width: 40rem;
+  margin-left: 2rem;
+  margin-top: 2rem;
+}
+@media (min-width: 1250px) and (max-width: 1326px){
+    .footer{
+        width: 83rem;
+    }
+}
+@media (min-width: 1170px) and (max-width: 1249px){
+    .footer{
+        width: 76rem;
+    }
+}
+
+  @media (min-width: 992px) and (max-width: 1160px){
+    .nav-link{
+      margin-left: 0px;
+    }
+
+  }
+   @media (min-width: 200px) and (max-width: 563px){
+    .starting{
+      width: 36rem;
+    }
+    .navbar{
+      width: 36rem;
+    }
+    .Schedule{
+      font-size: 20px;
+    }
+  .classes{
+    width: 35rem;
+  }
+  .foot{
+    width: 36rem;
+  }
+  }
+  .fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+.fa-whatsapp {
+  background: #7fc72e;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.fa-telegram {
+  background: #2c4762;
+  color: white;
+}
+.fa {
+  padding: 20px;
+    font-size: 30px;
+    width: 70px;
+    border-radius: 50%;
+    text-decoration: none;
+    margin: 5px 7px;
+}
+@media (min-width: 660px) and (max-width: 918px){
+  .pdfs{
+        width: 40rem;
+  }
+}
+@media (min-width: 300px) and (max-width: 918px){
+  .pdfs{
+        width: 30rem;
+  }
+}
+@media (min-width: 300px) and (max-width: 560px){
+  .table{
+        width: 36rem;
+  }
+}
+
+  </style>
+</head>
+<body>
+<div class="container-fluid p-5 starting  " >
+  <div class="row">
+    <div class="col-sm text-center">
+      <h2  style=" font-family: 'Noto Sans JP', sans-serif; color:#ffffff ;font-weight: 800;font-size: 40px;visibility: hidden"> LIVE CLASSES </h2>
+      <p style="font-family: 'Noto Sans JP', sans-serif; color: #ffffff;font-weight: 800;font-size: 20px;visibility:hidden">Education is everyone's right</p>
+    </div>
+  </div>
+</div>
+
+
+
+ <nav class="navbar navbar-expand-lg  navbar-light " style="background-color:#00004d">
+<a class="navbar-brand" href="#" style="font-family: 'Noto Sans JP', sans-serif; color:  #ff9900;font-weight: 800;font-size: 20px">Defence Champions </a> 
+  <button style="border-color: 2px solid white" class="navbar-toggler bg-white" type="button " data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-center " id="navbarNav">
+    <ul class="navbar-nav d-flex ">
+      <li class="nav-item ">
+        <a class="nav-link text-white " href="/"> Home </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white " href="/indianairforce">Indian Air Force </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" href="/indiannavy">Indian Navy </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white " href="/liveclasses">Live classes </a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link text-white" href="/Mock">Mock Tests </a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link text-white" href="/notes">Notes </a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link text-white" href="/contactus">Contact Us </a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link text-white" href="/login">Log In  </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+ <h2 class="mt-3 text-center Schedule" >NOTES</h2>
+
+<table class="table table-bordered table-dark mt-3">
+  <thead>
+    <tr>
+      <th scope="col">SUBJECT</th>
+      <th scope="col">DATE</th>
+      <th scope="col">TEACHER NAME</th>
+      <th scope="col">PDF</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Reasoning+Gk+Maths</th>
+      <td>2/7/2021</td>
+      <td>RAKESH SIR</td>
+      <td> <b><a href="#pdf1" class="text-primary">CLICK HERE</a></b></td>
+    </tr>
+    <tr>
+      <th scope="row">RAGA</th>
+      <td>30/6/2021</td>
+      <td>RAKESH SIR</td>
+      <td><b><a href="#pdf2" class="text-primary">CLICK HERE</a></b></td>
+    </tr>
+    <tr>
+      <th scope="row">Reasoning+Gk+Maths</th>
+      <td>29/6/2021</td>
+      <td>RAKESH SIR</td>
+      <td><b><a href="#pdf3" class="text-primary">CLICK HERE</a></b></td>
+    </tr>
+    <tr>
+      <th scope="row">NOTE:</th>
+      <td colspan="3" class="text-center"><b>TO JOIN CLASSES</b> <strong class="ml-3"><a href="https://www.youtube.com/c/DEFENCECHAMPIONS" class="text-primary"> CLICK HERE </a></strong> </td>      
+    </tr>
+  </tbody>
+</table>
+   <div class="pdfs" id="pdf1">
+ 
+    </div>  <br>
+                  <div class="pdfs" id="pdf2">
+                 </div>
+    <div class="pdfs" id="pdf3">
+                 </div>
+<!-- Footer -->
+<footer class="page-footer font-small  bg-dark foot">
+
+  <!-- Footer Elements -->
+  <div class="container-fluid">
+
+    <!-- Grid row-->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-12 py-3">
+        <div class="mb-4 d-flex justify-content-center mt-3">
+
+          <!-- Facebook -->
+          <a href="https://www.facebook.com/defencechampions" target="_blank" class="fa fa-facebook"></a>
+
+          <a href="https://www.youtube.com/channel/UC4JlLJVmyitEpbiSUL_9ssA"target="_blank"  class="fa fa-youtube"></a>
+          <!-- Google +-->
+          <a href="https://chat.whatsapp.com/DHlnroPWKtrIkH8WInnWtI" target="_blank" class="fa fa-whatsapp"></a>
+          <!--Instagram-->
+          <a href="https://www.instagram.com/rakesh_prajapati_official_123/" target="_blank" class="fa fa-instagram"></a>
+          <a href="https://t.me/defencechampions1" class="fa fa-telegram"></a>
+             
+        </div>
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row-->
+
+  </div>
+  <!-- Footer Elements -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3 text-primary">© 2021 Copyright:
+    <a href="#"> Defencecahmpions.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+ 
+   
+
+
+</body>
+</html>

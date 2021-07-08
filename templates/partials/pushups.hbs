@@ -1,0 +1,59 @@
+ <script>
+    let timer2 = 1 * 60;
+   let intervalId2 = null;
+   let audio2=new Audio('pushups.mp3');
+   let isStarted2 = 'false';
+   function updateTime2() {
+     let ele2 = document.getElementById('timer2')
+     if(timer2) {
+       const min = Math.floor(timer2 / 60);
+       const sec = timer2 % 60;
+       ele2.innerText = `${min} minutes:: ${sec} seconds`
+       timer2--;
+     } else {
+       clearInterval(intervalId2)
+       ele.innerText = "Time completed"
+     }
+   }
+   
+   
+   function resetTime2(){
+     let ele = document.getElementById('timer2');
+     timer2 = 1*60;   
+    
+   }
+   
+   let reset2 = document.querySelector('#reset2');
+   reset2.addEventListener('click',() => {
+   console.log(isStarted2);
+   resetTime2();
+   if(isStarted2 === 'true'){
+   audioResetAuto2();
+   }
+   });
+   
+   
+   let start2 = document.querySelector('#start2');
+   start2.addEventListener('click',() => {
+     console.log("press start2");
+   updateTime2();
+   isStarted2 = 'true';
+   intervalId2 = setInterval(updateTime2, 1000);
+   audioAuto2();
+    start2.disabled = true;
+   
+   });
+   
+   function audioResetAuto2()
+   {
+     audio2.currentTime = 0;
+     audio2.play();
+     
+   }
+   
+   function audioAuto2()
+   {
+     audio2=new Audio('pushups.mp3');
+     audio2.play();
+   }
+   </script>

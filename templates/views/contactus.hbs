@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Us </title>
+	 <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		font-family: arial;
+	}
+	body{
+		background-color: #07252d;
+	}
+	#h5{
+
+         font-size: 2em;
+         letter-spacing: 2px;
+         color: #0e3742;
+        text-transform: uppercase;
+        -webkit-box-reflect:below 1px linear-gradient(transparent,#0004);
+        /*line-height: 0.70em;*/
+        outline: none;
+        animation: animate 5s linear infinite;
+
+	}
+
+	@keyframes animate
+	{
+		0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%
+		{ 
+               color: #0e3742;
+               box-shadow: none;
+		 }
+	   18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%
+		 {
+		 	color: #0fff;
+		 	box-shadow: 0 0  10px #03bcf4,
+		 	0 0  20px #03bcf4,
+		 	0 0  40px #03bcf4,
+		 	0 0  80px #03bcf4,
+		 	0 0  160px #03bcf4,
+
+		 }
+	}
+	 .card{
+   	height: 34rem;
+   }
+	@media (min-width: 100px) and  (max-width: 1000px){
+		.sapna{
+			margin-left: 1rem;
+
+		}
+	}
+ 
+  @media (min-width: 766px) and  (max-width: 990px){
+		.card{
+			height: 40rem;
+		}
+	}
+
+
+.socialmedia {
+  display: flex;
+  margin-left: 4rem;
+  margin-top: 2rem;
+  width: 36rem;
+}
+
+.sath{
+	margin-left:14rem;
+}
+.badges{
+ 	padding: 1rem;
+ 	margin-left: 1rem;
+
+ }
+ @media (min-width: 1000px) and (max-width: 1500px){
+ 	 .socialmedia{
+ 	 	margin-left: 18rem;
+ 	 }
+ 	 
+ }
+
+@media (max-width: 630px){
+	.socialmedia{
+		margin-left: 0px;
+		width: 30rem;
+	}
+}
+
+@media (max-width: 500px){
+	.socialmedia{
+		margin-left: 0px;
+		width: 25rem;
+	}
+}
+
+ @media (min-width: 300px) and (max-width: 1000px){
+ 	.sath{
+ 		margin-left: 5rem;
+ 	}
+ 	 
+ }
+
+ .homes{
+ 	width: 30rem;
+ }
+ @media (min-width: 1000px) and (max-width: 1500px){
+ 	.homes{
+ 		margin-left: 21rem;
+ 	}
+ }
+ @media (min-width: 600px) and (max-width: 999px){
+ 	.homes{
+ 		margin-left: 9rem;
+ 	}
+ }
+ @media (min-width: 480px) and (max-width: 599px){
+ 	.homes{
+ 		margin-left: 0rem;
+ 	}
+ }
+  @media (min-width: 1px) and (max-width: 479px){
+ 	.homes{
+ 		width: 24rem;
+ 		margin-left: 0rem;
+ 		
+ 	}
+ 	.badges{
+ 		padding: 0.3rem;
+ 	}
+ }
+
+ #marquee{
+ 	width: 85%;
+
+ }
+  
+.bt1 {
+  width: 70px;
+  height: 70px;
+  margin: 20px;
+  outline: none;
+  border: none;
+  background: rgb(214, 214, 214);
+  box-shadow: 5px 5px 10px #b6a9a9, -5px -5px 10px #ffffff;
+  border-radius: 50%;
+  transition: 0.2;
+}
+
+.bt1:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.bt1:hover::before {
+  content: "";
+  position: absolute;
+  height: 80%;
+  width: 80%;
+  background: rgb(214, 214, 214);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bt1:hover::before {
+  box-shadow: inset -9px -9px 22px 0 rgba(255, 255, 255, 1),
+    inset 7px 7px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.bt1:active {
+  box-shadow: inset 1px 1px 2px #babeec, inset -1px -1px 2px #fff;
+}
+
+.bt1 img {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  transition: 0.2s;
+}
+
+.bt1 img:hover {
+  font-size: 30px;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 2px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-telegram {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-whatsapp {
+  background: #81ce29;
+  color: white;
+}
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background:  #cb2027;
+  color: white;
+}
+ 
+@media (min-width:200px) and (max-width:450px){
+  .card{
+    width: 20rem;
+  }
+  #marquee{
+    width:20rem;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="container-fluid text-center mt-4  ">
+	
+	 <h5 id="h5"> <strong>" DFC का सपना हर घर मे हो फौजी अपना "</strong></h5>
+
+</div>
+
+<div class="container mt-4 mb-3 ">
+	<div class="row">
+		<div class=" col-md-4">
+		<div class="card"  >
+  <img class="card-img-top" src="rakesh.jpg" alt="Card image cap" width="286" height="280">
+  <div class="card-body" >
+    <h5 class="card-title text-primary" ><strong>RAKESH SIR </strong></h5>
+    <p class="card-text text-primary"><strong><q>देश के हर युवा को <br>मिले देश सेवा का मोका  </q></strong></p>
+    <h6 class="text-center " style=" color: blue; font-family: Arial,Helvetica,sans-serif; font-size: 15px; font-weight: 800; 
+    text-shadow: 2px 2px 8px #00e1ff;  margin-top: 1rem"> FOR CONTACT CLICK BELOW LINKS   </h6>
+<div class="d-flex justify-content-around align-items-center mb-1 " >
+    
+<a href="https://www.facebook.com/defencechampions" target="_blank"  class="fa fa-facebook"></a>
+<a href="https://t.me/defencechampions1" target="_blank" class="fa fa-telegram"></a>
+<a href="https://chat.whatsapp.com/DHlnroPWKtrIkH8WInnWtI" target="_blank"  class="fa fa-whatsapp"></a>
+<a href="https://www.youtube.com/channel/UC4JlLJVmyitEpbiSUL_9ssA" target="_blank"  class="fa fa-youtube"></a>
+<a href="https://www.instagram.com/rakesh_prajapati_official_123/" target="_blank"  class="fa fa-instagram"></a>
+    
+  </div>
+  <a href="https://www.youtube.com/channel/UC4JlLJVmyitEpbiSUL_9ssA" class="btn btn-primary">Subscribe</a>
+</div>
+</div>
+</div>
+		<div  class=" col-md-4  ">
+			<div class="card" >
+  <img class="card-img-top" src="channellogo.jpg" alt="Card image cap" width="286" height="280">
+  <div class="card-body">
+    <h5 class="card-title text-primary"><strong>DEFNCE CHAMPIONS </strong></h5>
+    <p class="card-text  text-primary"><q><strong>यह Channel  उन सब साथियों को समर्पित ह जिनका लक्ष्य ओर जुनून  भारतीय सेना ह|<br>
+  इन सभी साथियों को हमारा सलाम | </strong></q></p><h5 class="text-primary ml-5"> "देशहित सर्वोपरि"</h5>
+  
+    <a href="https://www.youtube.com/channel/UC4JlLJVmyitEpbiSUL_9ssA" class="btn btn-primary">Subscribe</a>
+  </div>
+</div>
+		</div>
+		<div class=" col-md-4 ">
+			<div class="card" >
+  <img class="card-img-top" src="dkboss.jpg" alt="Card image cap" width="286" height="280">
+  <div class="card-body">
+    <h5 class="card-title text-primary"><strong>DINESH SIR </strong></h5>
+    <p class="card-text text-primary"><q><strong> जो हालात पर रोते ह वो सफल होते नही  <br> ओर जो सफल होते ह वो हालात पर रोते नही<br> हमारी मेहनत + आपकी मेहनत = सफलता
+</strong></q></p>
+
+    <a href="https://www.youtube.com/channel/UC4JlLJVmyitEpbiSUL_9ssA" class="btn btn-primary">Subscribe</a>
+  </div>
+</div>
+		</div>
+	</div>
+</div>
+
+<div class=" justify-content-around align-items-center  mb-3 mt-3 p-4  "  >
+  <marquee id="marquee" direction="right"  behavior="alternate" scrollamount="8" onmouseover="this.stop();" onmouseout="this.start();" >
+   <a href="https://www.youtube.com/channel/UC4JlLJVmyitEpbiSUL_9ssA" target="_blank" style="color:white;font-family: Arial,Helvetica,sans-serif; font-size: 20px; font-weight: 800; text-decoration: none;margin-left: 2rem "> PLEASE SUBSCRIBE YOUR CHANNEL AND PRESS BELL ICON  </a>
+</marquee>
+   <br><br>
+   <h5 class="sath" style=" color: rgb(245, 244, 243); font-family: Arial,Helvetica,sans-serif; font-size: 30px; font-weight: 800; 
+   text-shadow: 2px 2px 8px #00e1ff;  letter-spacing: 0.1rem"> जीवन मे सूर्य सा प्रकाश हो बस DFC का साथ हो </h5> 
+  <div class="container-fluid socialmedia">
+    <button class="btn bt1  " >
+     <a href="https://www.facebook.com/defencechampions" target="_blank"> <img src="Facebook.png" width="50" , height="50" ></a>
+    </button>
+    <button class="btn bt1">
+     <a href="https://www.instagram.com/rakesh_prajapati_official_123/" target="_blank"><img src="Instagram.png" width="50" , height="50"></a> 
+    </button>
+    <button class="btn bt1">
+     <a href="https://www.youtube.com/channel/UC4JlLJVmyitEpbiSUL_9ssA" target="_blank"> <img src="Youtube1.png" width="50" , height="40"></a>
+    </button>
+     <button class="btn bt1">
+      <a href="https://t.me/defencechampions1" target="_blank"><img src="telegram.png" width="50" , height="50"> </a>
+    </button>
+    <button class="btn bt1">
+    <a href="https://chat.whatsapp.com/DHlnroPWKtrIkH8WInnWtI" target="_blank">  <img src="whatsapp.png" width="50" , height="50"> </a>
+    </button>
+  </div>
+</div>  
+  
+  <div class=" d-flex homes  mt-3 mb-3"  >
+   <a href="/">  <button type="button " class="btn btn-danger badges " >
+    Home <span class="badge badge-light"></span>
+</button></a>
+<a href="/indianairforce"><button type="button " class="btn btn-light badges  " >
+    Indian Air Force   <span class="badge badge-light"></span>
+</button></a>
+<a href="/indiannavy"><button type="button " class="btn btn-light badges  " >
+    Indian Navy  <span class="badge badge-light"></span>
+</button></a>
+<a href="/nda"><button type="button " class="btn btn-success badges " >
+    NDA <span class="badge badge-light"></span>
+</button></a>
+   </div>
+
+</body>
+</html>

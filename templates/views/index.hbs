@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>trial</title>
+     <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<style type="text/css">
+	
+ .rows1{
+    background-color: rgb(62, 13, 240);
+    height: 14rem;
+    padding-top: 2.5rem;
+   }
+
+    #box2{
+
+width: 35rem;
+height: 5rem;
+margin-left: 8rem;
+margin-top: 4rem;
+ /*border: 2px solid blue;*/
+
+}
+#box2 h3{
+    text-align: center;
+color: white;
+font-family: Arial,Helvetica,sans-serif;
+font-size: 40px;
+font-weight: 800;
+margin-top: 0.5rem;
+}
+.col-3{
+/*border: 2px solid red;*/
+
+}
+#box1 img{
+    margin-left: 3rem;
+width: 9rem;
+border-radius: 65px;
+padding-top: 10px;
+}
+.navbar li{
+    float: left;
+    text-align: center;
+    list-style: none;
+    font: normal bold 14px/1.2em Arial,Verdana,Helvetica;
+    background-color: #000;
+    padding: 14px 23px;
+    margin: 1px;
+    max-width:12rem;  
+}
+#nda{
+    letter-spacing: 1px;
+}
+.navbar li a{
+    color: white;
+    text-decoration: none;
+}
+.nav{
+    width: 73rem;
+  
+    margin-top: -0.09rem;
+    margin-right:0px;
+    margin-left: -2rem;
+}
+
+.navbar{
+    width: 73rem;
+    padding: 0px 0px 0px 0px;
+    padding-right:0px;
+    margin-left: 1rem;
+}
+#login{
+    padding-right:72.0781px;
+}
+/*@media (min-width:300px) and (max-width:700px){
+  .nav{
+    width: 1185px;
+  }
+  #login{
+    padding-right: 85px;
+  }
+}*/
+.marquee1{
+    
+    width: 85%;
+    margin-left: 3.5rem;
+    margin-right: 10rem;
+}
+
+.marquee1 marquee a{
+    font-family: Arial,Helvetica,sans-serif;
+    text-decoration: none;
+   font-weight: 700;
+    font-size: 3;
+    color: blue;
+}
+
+.carousel
+    {
+    margin-top: 3rem;
+     display: grid;
+  /*box-shadow: -10px 8px gray;*/
+  width: 950px;
+  height: 535px;
+  box-sizing: inherit;
+  box-shadow: 0 10px 16px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%) !important;
+  margin-left: 10rem;
+
+} 
+#iframe{
+    width: 950px;
+    height: 535px;
+}
+
+.socialmedia {
+  width: 40rem;
+  margin-left: 2rem;
+  margin-top: 2rem;
+}
+
+.bt1 {
+  width: 70px;
+  height: 70px;
+  margin: 20px;
+  outline: none;
+  border: none;
+  background: rgb(214, 214, 214);
+  box-shadow: 5px 5px 10px #b6a9a9, -5px -5px 10px #ffffff;
+  border-radius: 50%;
+  transition: 0.2;
+}
+
+.bt1:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.bt1:hover::before {
+  content: "";
+  position: absolute;
+  height: 80%;
+  width: 80%;
+  background: rgb(214, 214, 214);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bt1:hover::before {
+  box-shadow: inset -9px -9px 22px 0 rgba(255, 255, 255, 1),
+    inset 7px 7px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.bt1:active {
+  box-shadow: inset 1px 1px 2px #babeec, inset -1px -1px 2px #fff;
+}
+
+.bt1 img {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  transition: 0.2s;
+}
+
+.bt1 img:hover {
+  font-size: 30px;
+}
+
+#timer1{
+    font-size: 20px;
+    font-weight: 800;
+  }
+  #start1{
+    border-color:2px solid green; 
+    background-color: green; 
+    color:white;
+    padding: 5px 20px;
+  }
+  #start1:hover{
+    background-color:  #2eb82e;
+  }
+  
+  #reset1{
+     border-color:2px solid red; 
+    background-color:red  ; 
+    color:white;
+    padding: 5px 20px;
+  }
+   #reset1:hover{
+    background-color:  #e60000;
+  }
+
+#timer2{
+    font-size: 20px;
+    font-weight: 800;
+  }
+  #start2{
+    border-color:2px solid green; 
+    background-color: green; 
+    color:white;
+    padding: 5px 20px;
+  }
+  #start2:hover{
+    background-color:  #2eb82e;
+  }
+  
+  #reset2{
+     border-color:2px solid red; 
+    background-color:red  ; 
+    color:white;
+    padding: 5px 20px;
+  }
+   #reset2:hover{
+    background-color:  #e60000;
+  }
+
+  
+  #timer3{
+    font-size: 20px;
+    font-weight: 800;
+  }
+  #start3{
+    border-color:2px solid green; 
+    background-color: green; 
+    color:white;
+    padding: 5px 20px;
+  }
+  #start3:hover{
+    background-color:  #2eb82e;
+  }
+  
+  #reset3{
+     border-color:2px solid red; 
+    background-color:red  ; 
+    color:white;
+    padding: 5px 20px;
+  }
+   #reset3:hover{
+    background-color:  #e60000;
+  }
+
+#latestupdate{
+    color: blue;
+     font-family: Arial,Helvetica,sans-serif; 
+     font-size: 30px; 
+     font-weight: 800; 
+    text-shadow: 2px 2px 8px #00e1ff;
+     margin-left: 5rem; 
+     margin-top: 4rem
+}
+#featuredvideo{
+  color: blue; 
+  font-family: Arial,Helvetica,sans-serif; 
+  font-size: 30px; 
+  font-weight: 800; 
+    text-shadow: 2px 2px 8px #00e1ff;
+     margin-left: 5rem; 
+     margin-top: 4rem
+}
+@media (min-width: 300px) and ( max-width: 410px){
+   #latestupdate{
+    font-size: 22px;
+   }
+   #featuredvideo{
+     font-size: 20px;
+   }
+  }
+
+@media (min-width: 1250px) and ( max-width: 1326px){
+   .carousel{
+    margin-left: 9rem;
+   }
+  }
+  @media ( max-width: 500px){
+   .carousel{
+    margin-left: 3rem;
+   }
+    .footer{
+    width:72rem;
+   }
+   #forms{
+    margin-left: 7rem;
+   }
+   .marquee1{
+        width: 65rem;
+       margin-right: 1rem;
+   }
+  }
+   @media (min-width: 500px) and ( max-width: 1250px){
+   .carousel{
+    margin-left: 4rem;
+   }
+   #forms{
+    margin-left: 7rem;
+   }
+   .footer{
+    width:72rem;
+   }
+   .marquee1{
+        width: 65rem;
+       margin-right: 1rem;
+   }
+  }
+
+@media (min-width: 1250px) and (max-width: 1326px){
+    .footer{
+        width: 83rem;
+    }
+}
+@media (min-width: 1170px) and (max-width: 1249px){
+    .footer{
+        width: 76rem;
+    }
+}
+
+ .label{
+    font: normal bold 14px/1.2em Arial,Verdana,Helvetica;
+    font-size: 18px;
+    font-weight: 800;
+}
+.nichevalaformcontrol{
+    width: 50rem;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+    box-shadow: inset 2px 3px 4px rgb(148, 213, 243);
+}
+ button[type=submit]{
+  background-color: rgb(25, 25, 155);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 25rem;
+  margin-top: 2rem;
+  }
+  .submit:hover {
+   background-color: rgb(9, 9, 114);
+   color: cornsilk;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+</style>
+</head>
+<body>
+    <div class="container-fluid mt-4 s" style=" width: 72rem"  >
+  <div class="row rows1 " >
+    <div class="col-3">
+      <div id="box1"> <img src="channellogo.png" class="rounded-circle  float-left mt-1 " alt="defence champions"  > </div>
+    </div>
+    <div class=" col-9  " >
+       <div id="box2"> <h3> DEFENCE CHAMPIONS </h3></div>
+    </div>
+</div>  
+<div class="nav">
+    <nav class="navbar">
+        <ul  style="padding-left: 0rem;">
+            <li ><a href="/" > Home</a> </li>
+            <li><a  href="/indianairforce" >INDIAN AIR FORCE</a></li>
+            <li><a href="/indiannavy" >INDIAN NAVY</a>  </li>
+            <li><a id="nda" href="/nda" >NDA </a></li>
+            <li><a href="/liveclasses"> LIVE CLASSES  </a> </li>
+            <li><a href="/Mock" >MOCK TESTS</a> </li>
+            <li> <a id="notes" href="/notes" >NOTES</a> </li>
+            <li > <a id="ct" href="/contactus" >CONTACT US </a></li>
+            <li id="login"> <a href="/login">LOG IN </a>
+         
+          
+           </li>
+        </ul>
+    </nav>
+</div>
+</div>
+<div class="marquee1" >
+        <marquee  direction="right"  behavior="alternate" scrollamount="8" onmouseover="this.stop();" onmouseout="this.start();" > <img src="New4.gif" width="4%" height="3%" >
+            &nbsp; <a href="https://airmenselection.cdac.in/STAR/controller/showSignIn" target="_blank"> AIR FORCE XY GROUP EXAM DATE OUT </a>
+        <b>||</b>
+       <a href="https://airmenselection.cdac.in/STAR/controller/showSignIn" target="_blank"> INDIAN AIR FORCE XY GROUP EXAM CITY RELEASED  </a>
+        </marquee>
+    </div>
+    <div class="marquee1" >
+        <marquee  direction="left"  behavior="alternate" scrollamount="11" onmouseover="this.stop();" onmouseout="this.start();" ><img src="New4.gif" width="4%" height="3%" > &nbsp;<a href="https://www.joinindiannavy.gov.in/en/account/account/state" target="_blank" > INDIAN NAVY(AA,SSR) ADMIT CARD RELEASED  </a>
+        <b>||</b>
+        <a href="https://www.upsc.gov.in/sites/default/files/WR-NDANA-I-2021-Engl-300621-roll.pdf" target="_blank"> NDA 2021 EXAMINATION RESULT OUT  </a>
+        </marquee>
+         <marquee  direction="left"  behavior="alternate" scrollamount="9" onmouseover="this.stop();" onmouseout="this.start();" >
+     <img src="New4.gif" width="4%" height="3%" >
+         <a href="https://cgept.cdac.in/icgreg/candidate/login" target="_blank"> INDIAN NAVY COAST GUARD DB,GD,YANTRIK ONLINE FORM START FROM 2 JULY 2021 </a>
+        </marquee>
+    </div>
+
+
+    <div class="container-fluid mt-4" style="width: 70rem">
+      <div class="row ">
+      <div class="col-sm-4">
+  <div class="card ">
+    <div class="card-header text-center text-white" style="background-color:#FF9933">
+     <strong style="font-size: 20px; font-weight:800"> Physical Test </strong> 
+    </div>
+    <div class="card-body text-center">
+      <h5 class="card-title "> <strong style="color:#FF9933;  font-size: 20px; font-weight: 800;">Running Status </strong> </h5>
+      <p id="timer1" class="text-center"> <strong style="  font-size: 20px; font-weight:800" > 7 Minute :00 Seconds</strong></p>
+  <button id='start1'  >Start</button>
+  <button id='reset1' >Reset</button>
+    </div>
+  </div>
+  </div>
+  
+  <script>
+    let timer1 = 7 * 60;
+   let intervalId1 = null;
+   let audio1=new Audio('Running.mp3');
+   let isStarted1 = 'false';
+   function updateTime1() {
+     let ele1 = document.getElementById('timer1')
+     if(timer1) {
+       const min = Math.floor(timer1 / 60);
+       const sec = timer1 % 60;
+       ele1.innerText = `${min} minutes:: ${sec} seconds`
+       timer1--;
+     } else {
+       clearInterval1(intervalId1)
+       ele1.innerText = "Time completed"
+     }
+   }
+   
+   
+   function resetTime1(){
+     let ele1 = document.getElementById('timer1');
+     timer1 = 7*60;   
+    
+   }
+   
+   let reset1 = document.querySelector('#reset1');
+   reset1.addEventListener('click',() => {
+   console.log(isStarted1);
+   resetTime1();
+   if(isStarted1 === 'true'){
+   audioResetAuto1();
+   }
+   });
+   
+   
+   let start1 = document.querySelector('#start1');
+   start1.addEventListener('click',() => {
+     console.log("start button 1");
+   updateTime1();
+   isStarted1 = 'true';
+   intervalId1 = setInterval(updateTime1, 1000);
+   audioAuto1();
+    start1.disabled = true;
+   
+   });
+   
+   function audioResetAuto1()
+   {
+     audio1.currentTime = 0;
+     audio1.play();
+     
+   }
+   
+   function audioAuto1()
+   {
+     audio1=new Audio('Running.mp3');
+     audio1.play();
+   }
+   </script>
+   
+  
+  <div class="col-sm-4">
+  <div class="card ">
+    <div class="card-header text-center " style="background-color:#FFFFFF">
+     <strong style="font-size:20px; font-weight:800; color:#000080"> Physical Test </strong>
+    </div>
+    <div class="card-body text-center">
+      <h5 class="card-title text-center"><strong style="font-size:20px; font-weight:800; color:#000080" >Push Up Time </strong> </h5>
+      <p id="timer2">1:00</p>
+  <button id='start2' >Start</button>
+  <button id='reset2' >Reset</button>
+    </div> 
+  </div>
+  {{>pushups}};
+  </div>
+
+  <div class="col-sm-4">
+  <div class="card ">
+    <div class="card-header text-center text-white" style="background-color:#138808">
+    <strong style="font-size:20px;font-weight: 800"> Physical Test </strong> 
+    </div>
+    <div class="card-body text-center">
+      <h5 class="card-title text-center"><strong style="font-size:20px;font-weight: 800; color:#138808">Squats Time </strong> </h5>
+      <p id="timer3">1:35</p>
+  <button id='start3' >Start</button>
+  <button id='reset3' >Reset</button>
+    </div>
+  </div>
+  {{>squats}}
+  </div>
+
+  </div>
+  </div>
+ <!-- {{>pushups}};
+   {{>squats}};-->
+
+     <h5 class="text-center" id="latestupdate" > LATEST UPDATES  </h5>
+   
+    <div id="carouselExampleIndicators" class="carousel slide " data-ride="carousel" >
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+     <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+     
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+    <iframe id="iframe" width="560" height="315" src="https://www.youtube.com/embed/CNc5egkNMW0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="carousel-item">
+      <iframe id="iframe" width="560" height="315" src="https://www.youtube.com/embed/rvmwuNX3eek" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="carousel-item">
+    <iframe id="iframe" width="560" height="315" src="https://www.youtube.com/embed/kzwYEaJzdos" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="carousel-item">
+     <iframe id="iframe" width="560" height="315" src="https://www.youtube.com/embed/551SjPk4ATY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>  
+
+<h5 class="text-center " id="featuredvideo" > FEATURED VIDEOS  </h5>
+
+<div id="carouselExampleIndicators" class="carousel slide " data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+   <iframe id="iframe" width="560" height="315" src="https://www.youtube.com/embed/glx3STikQAA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="carousel-item">
+    <iframe id="iframe" width="560" height="315" src="https://www.youtube.com/embed/CWRGKZEmcIQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="carousel-item">
+      <iframe id="iframe" width="560" height="315" src="https://www.youtube.com/embed/uVhkof_2GqY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next " href="#carouselExampleIndicators" role="button " data-slide="next" >
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>     
+
+  
+<div class="container-fluid "  style="width: 50rem" >
+      <h3 class="text-center " style=" color: blue; font-family: Arial,Helvetica,sans-serif; font-size: 30px; font-weight: 800; 
+    text-shadow: 2px 2px 8px #00e1ff;  margin-top: 4rem"> PLACE YOUR DOUBT   </h3>
+
+  <form action="/" id="forms" >
+  <div class="form-group">
+    <label for="Fname" class="label">First Name:</label>
+    <input type="text" class="form-control nichevalaformcontrol" placeholder="Enter Your First Name " id="Fname">
+  </div>
+   <div class="form-group">
+    <label for="Lname" class="label">Last Name:</label>
+    <input type="text" class="form-control nichevalaformcontrol" placeholder="Enter Your Last Name " id="Lname">
+  </div>
+  <div class="form-group ">
+    <label for="email" class="label">Mobile Number :</label>
+    <input type="number" class="form-control nichevalaformcontrol" placeholder="Enter Your Whatsapp Number" id="phone">
+  </div>
+   <div class="form-group">
+    <label for="doubts" class="label">Your Doubt :</label>
+    <textarea type="text" class="form-control nichevalaformcontrol" placeholder="Enter Your Doubt Here " id="doubts" style="height: 200px; width: 500px"></textarea>
+  </div>
+  <button type="submit" onclick="gotowhatsapp()" class="btn submit" >Submit</button>
+</form>
+
+<script> 
+function gotowhatsapp(){
+  var fname=document.getElementById("Fname").value;
+  var lname=document.getElementById("Lname").value;
+  var phonenumber=document.getElementById("phone").value;
+  var doubt=document.getElementById("doubts").value;
+  var url="https://wa.me/917042268205?text= "
+  +"First name:"+fname+"%0a"
+  +"Last name:"+lname+"%0a"
+  +"Phone Number :"+phonenumber+"%0a"
+  +"Doubt:"+doubt+"%0a";
+  window.open(url,'_blank').focus();
+}
+
+</script>
+</div>    
+ 
+ <div class="footer  justify-content-around align-items-center bg-dark mb-5 mt-3 p-5 " >
+  <marquee  direction="right"  behavior="alternate" scrollamount="8" onmouseover="this.stop();" onmouseout="this.start();" >
+   <a href="https://www.youtube.com/channel/UC4JlLJVmyitEpbiSUL_9ssA" target="_blank" style="color:white;font-family: Arial,Helvetica,sans-serif; font-size: 20px; font-weight: 800; text-decoration: none"> PLEASE SUBSCRIBE YOUR CHANNEL AND PRESS BELL ICON  </a>
+</marquee>
+   <br><br>
+   <h5 style=" color: rgb(245, 244, 243); font-family: Arial,Helvetica,sans-serif; font-size: 30px; font-weight: 800; 
+   text-shadow: 2px 2px 8px #00e1ff; margin-left:13rem; letter-spacing: 0.1rem"> FOLLOW US </h5> 
+  <div class="container-fluid socialmedia">
+    <button class="btn bt1  " >
+    <a href="https://www.facebook.com/defencechampions" target="_blank"> <img  src="Facebook.png" width="50" , height="50" ></a>
+    </button>
+    <button class="btn bt1">
+     <a href="https://www.instagram.com/rakesh_prajapati_official_123/" target="_blank"><img src="Instagram.png" width="50" , height="50"></a> 
+    </button>
+    <button class="btn bt1">
+     <a href="https://www.youtube.com/channel/UC4JlLJVmyitEpbiSUL_9ssA" target="_blank"> <img src="Youtube1.png" width="50" , height="40"></a>
+    </button>
+     <button class="btn bt1">
+      <a href="https://t.me/defencechampions1" target="_blank"><img src="telegram.png" width="50" , height="50"> </a>
+    </button>
+    <button class="btn bt1">
+    <a href="https://chat.whatsapp.com/DHlnroPWKtrIkH8WInnWtI" target="_blank">  <img src="whatsapp.png" width="50" , height="50"> </a>
+    </button>
+  </div>
+  
+  <div class="container-fluid" style=" width: 20rem;  margin-left: 46.5rem;  margin-top: -12rem;
+color: rgb(18, 18, 124);">
+    <h5 style=" color: rgb(245, 244, 243); font-family: Arial,Helvetica,sans-serif; font-size: 30px; font-weight: 800; 
+   text-shadow: 2px 2px 8px #00e1ff; margin-left:1rem; letter-spacing: 0.1rem;margin-top: 1rem"> PROVIDE YOU </h5>
+  <ul style="color:aqua;font-family: Arial,Helvetica,sans-serif; font-size: 18px; font-weight: 800; 
+  text-shadow: 2px 2px 8px #00e1ff ">
+    <li>Give Guidence Step by Step process</li>
+  <li>Examination Preperation</li>
+  <li>Physical Preperation</li>
+  <li>Medical Preperation</li>
+  </ul>
+  </div>
+</div> 
+  </div>
+   
+
+ 
+ </body>
+</html>

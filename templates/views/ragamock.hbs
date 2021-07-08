@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Mock test </title>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<style type="text/css">
+  .main-div{
+   background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.4);
+
+  }
+   .inner-div{
+     box-sizing: border-box;
+     font-family: "Josefin Sans",sans-serif;
+     font-weight: 700;
+
+   }
+
+
+.btns {
+    font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #0000ff;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 5px 5px #999;
+  margin-left:6rem;
+  width: 80px
+}
+
+.btns:hover {background-color: #000066}
+
+
+
+   .shows{
+       background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.4);
+    box-sizing: border-box;
+     font-family: "Josefin Sans",sans-serif;
+     font-weight: 700;
+  text-align: center;
+  color: #000099;
+   }
+   .nexttest {
+     background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.4);
+    box-sizing: border-box;
+     font-family: "Josefin Sans",sans-serif;
+     font-weight: 700;
+  text-align: center;
+  color: #000099;
+   }
+   .nav-link{
+    font-family: 'Noto Sans JP', sans-serif; 
+    
+    font-weight: 700;
+    font-size: 18px;
+    margin-left: 1rem;
+  }
+
+  @media (min-width: 992px) and (max-width: 1160px){
+    .nav-link{
+      margin-left: 0px;
+    }
+
+  }
+
+  #raga{
+    color: blue;
+     font-family: Arial,Helvetica,sans-serif; 
+     font-size: 20px; 
+     font-weight: 800; 
+    text-shadow: 2px 2px 8px #00e1ff;
+    margin-right: 6rem
+  }
+  @media  (min-width: 100px) and (max-width: 470px){
+   #raga{
+    font-size: 13px;
+
+   }
+  }
+   @media (min-width: 300px) and (max-width: 600px) {
+       #answered{
+         margin-bottom: 5px;
+       }
+     #unanswered{
+       margin-bottom: 5px;
+     }
+    }
+
+</style>
+</head>
+<body>
+
+<div class="container-fluid p-5 starting " style="background-image: url('study.jpg')">
+  <div class="row">
+    <div class="col-sm text-center">
+      <h2  style=" font-family: 'Noto Sans JP', sans-serif; color:  #ff9900;font-weight: 800;font-size: 40px"> MOCK TETS  </h2>
+      <p style="font-family: 'Noto Sans JP', sans-serif; color:  #ff9900;font-weight: 800;font-size: 20px">Practice makes perfect</p>
+    </div>
+  </div>
+</div>
+
+
+
+ <nav class="navbar navbar-expand-lg  navbar-light " style="background-color:#00004d">
+<a class="navbar-brand" href="#" style="font-family: 'Noto Sans JP', sans-serif; color:  #ff9900;font-weight: 800;font-size: 20px">Defence Champions </a> 
+  <button style="border-color: 2px solid white" class="navbar-toggler bg-white" type="button " data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-center " id="navbarNav">
+    <ul class="navbar-nav d-flex ">
+      <li class="nav-item active">
+        <a class="nav-link text-white " href="/">Home </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white " href="/indianairforce">Indian Air Force </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" href="/indiannavy">Indian Navy </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white " href="/liveclasses">Live classes </a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link text-white" href="/Mock">Mock Tests </a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link text-white" href="/notes">Notes </a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link text-white" href="/contactus">Contact Us </a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link text-white" href="/login">Log In  </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+<div class="container mt-3 text-center">
+<h4 id="raga"> RAGA(GK+REASONING+MATHEMATICS) </h4>
+</div>
+	<div class=" float-right mt-3">
+		<p id="timer"  style=" font-family: 'Noto Sans JP', sans-serif; color:#ff0000;font-weight: 700;font-size: 20px;margin-right: 20px"></p>
+		<p id="out" class="text-danger mb-2" style=" font-family: 'Noto Sans JP', sans-serif; color: #267326;font-weight: 700;font-size: 20px;margin-right: 20px"> </p>
+	</div><br>
+  <div class="container-fluid mt-5">
+    <div class=" utter row d-flex  " style="width: 84%" >
+      <div class="col-sm-4 " style="background-color: #00ffff; font-family: 'Noto Sans JP', sans-serif; font-weight: 700;font-size: 20px" id="answered">Answered </div>
+        <div class="col-sm-4" id="unanswered" style="background-color:#e60000; font-family: 'Noto Sans JP', sans-serif; font-weight: 700;font-size: 20px">Un-answered </div>
+          <div class="col-sm-4"  id="markreview" style="background-color: #005ce6; font-family: 'Noto Sans JP', sans-serif; font-weight: 700;font-size: 20px">Mark For Review </div>
+    </div>
+  </div>
+
+<div class="mt-3">
+      <table border = "1"  id="mytable">
+         <tr>
+            <td id="ek" onclick="jump(0)" style="padding-right: 100px">1</td>
+            <td id="do" onclick="jump(1)" style="padding-right: 100px">2</td>
+         </tr>
+         <tr>
+            <td id="teen" onclick="jump(2)" >3</td>
+            <td onclick="jump(3)" >4</td>
+         </tr>
+         <tr>
+            <td onclick="jump(4)">5</td>
+            <td onclick="jump(5)">6</td>
+         </tr>
+         <tr>
+            <td onclick="jump(6)">7</td>
+            <td onclick="jump(7)">8</td>
+         </tr>
+         <tr>
+            <td onclick="jump(8)">9</td>
+            <td onclick="jump(9)">10</td>
+         </tr>
+         <tr>
+            <td onclick="jump(10)">11</td>
+            <td onclick="jump(11)">12</td>
+         </tr>
+         <tr>
+            <td onclick="jump(12)">13</td>
+            <td onclick="jump(13)"> 14</td>
+         </tr>
+         <tr>
+            <td onclick="jump(14)">15</td>
+            <td onclick="jump(15)">16</td>
+         </tr>
+         <tr>
+            <td onclick="jump(16)">17</td>
+            <td onclick="jump(17)">18</td>
+         </tr>
+         
+         <tr>
+            <td onclick="jump(18)">19</td>
+            <td onclick="jump(19)">20</td>
+         </tr>
+          <tr>
+            <td onclick="jump(20)">21</td>
+            <td onclick="jump(21)">22</td>
+         </tr>
+          <tr>
+            <td onclick="jump(22)">23</td>
+            <td onclick="jump(23)">24</td>
+         </tr>
+    <tr>
+            <td onclick="jump(24)">25</td>
+          <td onclick="jump(25)">26</td>
+           
+         </tr>
+         
+ <tr>
+            <td onclick="jump(26)">27</td>
+              <td onclick="jump(27)">28</td>
+         </tr>
+          <tr>
+            <td onclick="jump(28)">29</td>
+            <td onclick="jump(29)">30</td>
+         </tr>
+
+
+      </table>
+  </div>
+
+
+<div class=" main-div container p-3" style="margin-top:6rem"  >
+  
+       <div class="inner-div" >
+    <h4 class="questions">  Questions Comes here </h4>
+    <img class="qimage"></img>
+    <ul>
+       <li> <input type="radio" name="answer" id="ans1" class="answer">
+        <label for="ans1" id="option1">Answer options </label></li>
+      <li>
+        <input type="radio" name="answer" id="ans2" class="answer">
+        <label for="ans2" id="option2">Answer options </label></li>
+      
+      <li>  <input  type="radio" name="answer" id="ans3" class="answer">
+        <label for="ans3" id="option3">Answer options </label></li>
+      
+        <li><input  type="radio" name="answer" id="ans4" class="answer">
+        <label for="ans4" id="option4">Answer options </label></li>
+  </ul>
+    <button id="submit" class="text-white bg-success"> Save and Next </button>
+    <!--<button class="text-white bg-danger" id="preview" onclick="Preview()">Previous Question</button>-->
+    <button class="text-white bg-primary"  onclick="markre()">Mark for Review</button>
+     <button class="text-white bg-danger"  onclick="safaya()">Clear</button>
+  </div>
+  <button class=" btns text-white  " id="start" onclick="timestart()">Start</button>
+</div>
+  <div class="shows mt-3 container p-3 mb-3"> <br>
+    <!--<p id="loadings"></p> -->
+  <h5 id="showscore"></h5>
+   <h5 id="wrongans"></h5>
+  </div>
+
+   <div class="nexttest mt-5 container p-3 mb-3"> <br>
+  <h4 class="mt-2 text-center" style=" color: blue; font-family: Arial,Helvetica,sans-serif; font-size: 23px; font-weight: 800; 
+    text-shadow: 2px 2px 8px #00e1ff"> Indian Air Force XY Group ,Indian Navy (AA,SSR)</h4>
+    <button class="Raga btn-primary  mt-3" style="border:2px solid #00004d;width: 250px;font-family: Arial,Helvetica,sans-serif; font-size:23px"> <strong> <a class="text-white" style="text-decoration: none" href="/Mock" >English Mock Test</a></strong></button>
+  </div>
+  <div class="mt-4 mb-5 text-center" style="font-size: 25px">
+    <strong class="text-danger ">NOTE:</strong><span class="text-primary"><b>Answer Key Also Provide In Telegram and Whatsapp Group Also</b></span>
+  </div>
+
+
+
+ <script type="text/javascript">
+    const quiz = [{
+      question: "Q1: RODE =24 THEN LANE =?",
+      a: "12",
+      b: "14",
+      c: "16",
+      d: "42",
+      ans: "ans2",
+      stuAns: null
+    },
+    {
+      question: "Q2:61,74,87,?,113,126",
+      a: "98",
+      b: "100",
+      c: "128",
+      d: "103",
+      ans: "ans2",
+      stuAns: null
+    },
+    {
+      question: "Q3: राज्यसभा के वर्तमान उपाध्यक्ष कौन है ",
+      a: "वेकैया नायडू ",
+      b: "हरिवंश नारायण ",
+      c: "नरेंद्र मोदी ",
+      d: "ओम बिरला ",
+      ans: "ans2",
+      stuAns: null
+    },
+     {
+      question: "Q4:भारत के वर्तमान में मुख्य सुचना आयुक्त कौन है  ",
+      a: "विमल शर्मा ",
+      b: "यशवर्धन सिह  सिन्हा  ",
+      c: "रविशंकर",
+      d: "रमेश पोखरियाल ",
+      ans: "ans4",
+      stuAns: null
+    },
+    {
+      question: "Q5:तैलंगाना की राजधानी है :  ",
+      a: "अमरावती ",
+      b: "हैदराबाद ",
+      c: "मैसूर",
+      d: "जयपुर ",
+      ans: "ans2",
+      stuAns: null
+    },
+     {
+      question: "Q6:क्षेत्रफल की दृष्टि से भारत का सबसे बड़ा जिला कोनसा है   ",
+      a: "जैसलमेर",
+      b: "लद्दाख ",
+      c: "जयपुर ",
+      d: "कानपुर",
+      ans: "ans2",
+      stuAns: null
+    },
+      {
+      question: "Q7:चोरी  चोरा  नामक स्थान कहा है   ",
+      a: "लखनऊ ",
+      b: "आगरा  ",
+      c: "गोरखपुर ",
+      d: "None",
+      ans: "ans3",
+      stuAns: null
+    },
+      {
+      question: "Q8: राजस्थान का हदय किसे कहा जाता है  ",
+      a: "जयपुर ",
+      b: "अजमेर ",
+      c: "उदयपुर ",
+      d: "सिरोही ",
+      ans: "ans2",
+      stuAns: null
+    },
+     {
+      question: "Q9: जुड़वा ग्रह किसे कहा जाता है   ",
+      a: "शुक्र मंगल ",
+      b: "शुक्र बुध",
+      c: "पृथ्वी शुक्र  ",
+      d: "शनि  वरूण ",
+      ans: "ans3",
+      stuAns: null
+    },
+    {
+      question: "Q10: गंगा के उद्गमस्थल को कहा जाता है  ",
+      a: "गंगोत्री",
+      b: "गोमुख ",
+      c: "गोदुग्ध ",
+      d: "हिमानी ",
+      ans: "ans1",
+      stuAns: null
+    },
+     {
+      question: "Q11: विटामिन B1 कि कमी से होने वाला रोग है   ",
+      a: "पेलग्रा",
+      b: "एनीमीया ",
+      c: "बैरी बैरी  ",
+      d: "None",
+      ans: "ans3",
+      stuAns: null
+    },
+     {
+      question: "Q12: सिम्बलबारा  नैशनल पार्क कहा स्थित है   ",
+      a: "हिमाचल प्रदेश ",
+      b: "जयपुर",
+      c: "मध्य प्रदेश  ",
+      d: "महाराष्ट्र ",
+      ans: "ans1",
+      stuAns: null
+    },
+     {
+      question: "Q13: मरु उधान कहा है   ",
+      a: "जैसलमेर",
+      b: "अलवर ",
+      c: "चूरु  ",
+      d: "जयपुर ",
+      ans: "ans1",
+      stuAns: null
+    },
+     {
+      question: "Q14: भारतीय कैलेंडर आधारित है   ",
+      a: "शक संवत् ",
+      b: "इस्वी ",
+      c: "ईसा पूर्व  ",
+      d: "None ",
+      ans: "ans1",
+      stuAns: null
+    },
+     {
+      question: "Q15: वर्ग का क्षेत्रफल है  ",
+      a: "भुजा *भुजा",
+      b: "भुजा *भुजा*भुजा",
+      c: "भुजा ",
+      d: "None ",
+      ans: "ans1",
+      stuAns: null
+    },
+     {
+      question: "Q16: चाय  के मुल्य में 20% कि वृद्धी होने के कारण ग्रहणी  उपयोग में कितना % कम करे ताकि व्यय में कोई फर्क ना पड़े  ",
+      a: "16 2/3",
+      b: "16 1/3",
+      c: "15 2/6 ",
+      d: "31 3/5 ",
+      ans: "ans1",
+      stuAns: null
+    },
+    {
+      question: "Q17:  A:B= 9:6 & B:c = 12:6 A:C = 3:8 then a:b:c =? ",
+      a: "3:2:8",
+      b: "3:2:4",
+      c: "1:2:3 ",
+      d: "2:3:7",
+      ans: "ans1",
+      stuAns: null
+    },
+    {
+      question: "Q18:  3330 of 65 + 963-300 ",
+      a: "217113",
+      b: "20113",
+      c: "19113",
+      d: "214141",
+      ans: "ans1",
+      stuAns: null
+    },
+     {
+      question: "Q19: (85/6 +36 -12 +63*5 +96 +90/5) ",
+      a: "449.16",
+      b: "500",
+      c: "439.06",
+      d: "441.16",
+      ans: "ans1",
+      stuAns: null
+    },
+     {
+      question: "Q20: X का 20 % = y का 33% X:Y =?",
+      a: "33:19",
+      b: "33:20",
+      c: "22:10",
+      d: "33:90",
+      ans: "ans2",
+      stuAns: null
+    },
+     {
+      question: "Q21:एक इलेक्ट्रॉनिक्स ट्रेन उतर से दक्षिण कि ओर जा रही है।  ओर हवा उतर दिशा से पुर्व की ओर जा रही है ट्रेन का धुआँ किस दिशा में जा रहा है ",
+      a: "North",
+      b: "South",
+      c: "East",
+      d: "None",
+      ans: "ans4",
+      stuAns: null
+    },
+    {
+      question: "Q22:",
+      a: "A",
+      b: "B",
+      c: "C",
+      d: "D",
+      ans: "ans3",
+      stuAns: null
+    },
+    {
+      question: "Q23:",
+      a: "A",
+      b: "B",
+      c: "C",
+      d: "D",
+      ans: "ans3",
+      stuAns: null
+    },
+    {
+      question: "Q24:",
+      a: "A",
+      b: "B",
+      c: "C",
+      d: "D",
+      ans: "ans3",
+      stuAns: null
+    },
+    {
+      question: "Q25:",
+      a: "A",
+      b: "B",
+      c: "C",
+      d: "D",
+      ans: "ans3",
+      stuAns: null
+    },
+    {
+      question: "Q26:",
+      a: "A",
+      b: "B",
+      c: "C",
+      d: "D",
+      ans: "ans3",
+      stuAns: null
+    },
+    {
+      question: "Q27:",
+      a: "A",
+      b: "B",
+      c: "C",
+      d: "D",
+      ans: "ans3",
+      stuAns: null
+    },
+    {
+      question: "Q28:",
+      a: "A",
+      b: "B",
+      c: "C",
+      d: "D",
+      ans: "ans4",
+      stuAns: null
+    },
+    {
+      question: "Q29:",
+      a: "A",
+      b: "B",
+      c: "C & B",
+      d: "C & D",
+      ans: "ans4",
+      stuAns: null
+    },
+    {
+      question: "Q30:",
+      a: "A",
+      b: "B",
+      c: "C",
+      d: "D",
+      ans: "ans2",
+      stuAns: null
+    }
+    ]
+    /* var imgArray=new Array();
+     imgArray[23]=new Image();
+     imgArray[23].src='../public/images/yt.png';*/
+//quiz[21].question = new Image();
+//quiz[21].question.src = 'yt.png';
+   let totalQ = 30;
+    let questioncount = -1;
+    let score = 0;
+    let count = 0;
+    let terminate = totalQ;
+    let m = 0;
+    let image = 0;
+    const Question = document.querySelector('.questions');
+    const Option1 = document.querySelector('#option1');
+    const Option2 = document.querySelector('#option2');
+    const Option3 = document.querySelector('#option3');
+    const Option4 = document.querySelector('#option4');
+    const Submit = document.querySelector('#submit');
+    const ANS = document.querySelectorAll('.answer');
+    const show = document.querySelector('#showscore');
+     const Wrongans = document.querySelector('#wrongans');
+    const x = document.querySelector('#mytable');
+    /const previews=document.querySelector('#preview');/
+    const load = document.querySelector('#loadngs');
+    const answereded = document.querySelector('#answered');
+    const unans = document.querySelector('#unanswered');
+    const markes = document.querySelector('#markreview');
+    const one = document.querySelector('#ek');
+    const two = document.querySelector('#do');
+    const three = document.querySelector('#teen');
+    const ma = document.querySelector('#mark');
+    const st = document.getElementById('start');
+    const inner = document.querySelector('.inner-div');
+    const qimage = document.querySelector('.qimage');
+    if (questioncount === -1) {
+      inner.style.display = 'none';
+    }
+    const img_src=new Array();
+   img_src[22]='Q22.jpg';    
+    img_src[23]='Q23.jpg';
+    img_src[24]='Q24.jpg';
+    img_src[25]='Q25.jpg';
+    img_src[26]='Q26.jpg';
+    img_src[27]='Q27.jpg';
+    img_src[28]='Q28.jpg';
+    img_src[29]='Q29.jpg';
+    img_src[30]='Q30.jpg';
+    function add_img() {  
+    qimage.src = img_src[questioncount+1];
+    qimage.height = '200'; 
+	  qimage.width = '300';
+    }
+    const loadquestion = () => {
+      const questionlist = quiz[questioncount];
+      if(img_src[questioncount+1])
+      {
+        qimage.style.display='block';
+        add_img(questioncount);
+      }
+      else{
+        qimage.style.display='none';
+      }
+      Question.innerText = questionlist.question;
+      Option1.innerText = questionlist.a;
+      Option2.innerText = questionlist.b;
+      Option3.innerText = questionlist.c;
+      Option4.innerText = questionlist.d;
+      if (questioncount != -1) {
+        st.style.display = 'none';
+      }
+    }
+    const getcheckans = () => {
+      let ans;
+      ANS.forEach((currel) => {
+        if (currel.checked) {
+          ans = currel.id;
+        }
+      });
+      return ans;
+    };
+
+    function answered() {
+      ANS.forEach((currentlement) => {
+        if (currentlement.checked) {
+          count++;
+          answereded.innerHTML = `Answered Questions is ${count}`;
+          terminate = totalQ - count;
+          unans.innerHTML = `Un-answered Questions is ${terminate}`;
+        }
+
+      })
+    }
+
+
+    function jump(item) {
+      questioncount = item;
+      const questionlist = quiz[item];
+      if(img_src[questioncount+1])
+      {
+        qimage.style.display='block';
+        add_img(questioncount);
+      }
+      else{
+        qimage.style.display='none';
+      }
+      Question.innerText = questionlist.question;
+      Option1.innerText = questionlist.a;
+      Option2.innerText = questionlist.b;
+      Option3.innerText = questionlist.c;
+      Option4.innerText = questionlist.d;
+      if (questionlist.stuAns != null) {
+        document.getElementById(questionlist.stuAns).checked = true;
+      }
+      else {
+        deselectAll();
+      }
+
+    }
+
+    function markre() {
+      deselectAll();
+      console.log("Count " + count);
+      m++;
+      markes.innerHTML = `Marked For Review ${m}`;
+      if (questioncount < quiz.length) {
+        for (i = 0; i < x.rows.length; i++) {
+          var objCells = x.rows.item(i).cells;
+          for (var j = 0; j < objCells.length; j++) {
+            let k = parseInt(objCells.item(j).innerHTML) - 1;
+            if (k === questioncount) {
+              if (objCells.item(j).getElementsByTagName('img').length > 0 && quiz[questioncount].stuAns === null) {
+                m--;
+                markes.innerHTML = `Marked For Review ${m}`;
+              }
+              if (objCells.item(j).getElementsByTagName('img').length > 0 && quiz[questioncount].stuAns !== null) {
+                quiz[questioncount].stuAns = null;
+                count--;
+                terminate = totalQ - count;
+                answereded.innerHTML = `Answered Questions is ${count}`;
+                unans.innerHTML = `Un-answered Questions is ${terminate}`;
+              }
+              objCells.item(j).innerHTML = ` ${k + 1}<img class="ml-2" style=" position:absolute" id="qm" src="Qmark.png"  width="25" height="20">`;
+              image++;
+
+            }
+          }
+
+        }
+      }
+
+
+      questioncount++;
+
+      if (questioncount < quiz.length) {
+        loadquestion();
+        if (quiz[questioncount].stuAns != null) {
+          document.getElementById(quiz[questioncount].stuAns).checked = true;
+        }
+      }
+      else {
+        questioncount--;
+        alert("This is last question No more questions");
+      }
+    }
+
+    const deselectAll = () => {
+      ANS.forEach((currentel) => {
+        currentel.checked = false;
+      });
+    }
+
+    function safaya() {
+      deselectAll();
+      if (quiz[questioncount].stuAns !== null) {
+        count--;
+        terminate = totalQ - count;
+        answereded.innerHTML = `Answered Questions is ${count}`;
+        unans.innerHTML = `Un-answered Questions is ${terminate}`;
+        if (questioncount < quiz.length) {
+          for (i = 0; i < x.rows.length; i++) {
+            var objCells = x.rows.item(i).cells;
+            for (var j = 0; j < objCells.length; j++) {
+              let k = parseInt(objCells.item(j).innerHTML) - 1;
+              if (k === questioncount) {
+                objCells.item(j).innerHTML = `${k + 1}`;
+              }
+            }
+          }
+        }
+      }
+      quiz[questioncount].stuAns = null;
+    }
+
+    Submit.addEventListener('click', () => {
+      console.log("length ", quiz.length);
+      let checkedans = getcheckans();
+      if (checkedans != null) {
+        if (questioncount < quiz.length) {
+          for (i = 0; i < x.rows.length; i++) {
+            var objCells = x.rows.item(i).cells;
+            for (var j = 0; j < objCells.length; j++) {
+              let k = parseInt(objCells.item(j).innerHTML) - 1;
+              if (k === questioncount) {
+                if (objCells.item(j).getElementsByTagName('img').length > 0 && quiz[questioncount].stuAns === null) {
+                  m--;
+                  markes.innerHTML = `Marked For Review ${m}`;
+
+                }
+                objCells.item(j).innerHTML = `${k + 1}<img class="ml-2" style=" position:absolute" src="rightclick.png"  width="25" height="20">`;
+              }
+            }
+          }
+        }
+        if (quiz[questioncount].stuAns === null) {
+          answered();
+        }
+        quiz[questioncount].stuAns = checkedans;
+      }
+      questioncount++;
+
+
+
+      if (questioncount < quiz.length) {
+        loadquestion();
+      }
+
+      if (questioncount === quiz.length) {
+        questioncount--;
+        alert("This is last question No more questions");
+      }
+
+      if (quiz[questioncount].stuAns != null) {
+        document.getElementById(quiz[questioncount].stuAns).checked = true;
+      }
+      else {
+        deselectAll();
+      }
+    });
+
+    function timestart() {
+      answereded.innerHTML = `Answered Questions is ${count}`;
+      unans.innerHTML = `Un-answered Questions is ${terminate}`;
+      markes.innerHTML = `Marked For Review ${m}`;
+
+      inner.style.display = 'initial';
+      questioncount = 0;
+      loadquestion();
+      let timer = 25* 60;
+      let i = null;
+      let p = document.querySelector('#timer');
+      let outs = document.querySelector('#out');
+      function updatetime() {
+        if (timer > -1) {
+
+          let minute = Math.floor(timer / 60);
+          let second = timer % 60;
+          p.innerText = `Time Remaining is : ${minute}minutes:${second}seconds`;
+          timer--;
+
+        } else {
+          let k=0;
+          const wrongansarray=[];
+          inner.style.display = 'none';
+          clearInterval(i);
+          outs.innerText = "Time out";
+          for (let i = 0; i < quiz.length; i++) {
+            if (quiz[i].stuAns === quiz[i].ans) {
+              score++;
+            }
+            else if(quiz[i].stuAns!==null){
+              score=score-0.25;
+               wrongansarray[k++]=i+1;
+            }
+           
+          }
+           Wrongans.innerHTML = `Wrong Answers Are::  ${wrongansarray}<br> `;
+          show.innerHTML = `You scored ::  ${score}/${quiz.length}<br> 
+      <button class="btn bg-primary mt-3 text-white" onclick="location.reload()">Resume</button> `;
+
+
+        }
+      }
+      i = setInterval(updatetime, 1000);
+    }
+  </script>
+</body>
+</html>
