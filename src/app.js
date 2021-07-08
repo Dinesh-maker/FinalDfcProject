@@ -94,8 +94,8 @@ app.post("/login", async (req,res)=>{
       console.log("Hii");
      
         const registered= await  registerStudent.save();
+        console.log("Save Ho Gya");
         res.status(201).render("index");
-        console.log("Hello hii");
     }catch(error){
         res.status(400).send(error);
     }
@@ -208,47 +208,6 @@ app.post("/emailverification", async (req,res,next)=>{
         subject: 'Sending Email using Node.js',
         html: `Click on this link : <a target="_blank" rel="external" href="${link}">Click Here</a>`
       };
-//     const CLIENT_ID='207876639273-30jmrt4g564o6eae765m00u22ki9n5e4.apps.googleusercontent.com'
-//     const CLIENT_SECRET='8_FKMs6e8MIcbzP1AqxGNusF'
-//     const REDIRECT_URI='https://developers.google.com/oauthplayground'
-//     const REFRESH_TOKEN='1//04oRZF5PXzW3DCgYIARAAGAQSNwF-L9IrTZ77zkitudg7YwGLQmQ-IUd7bvQIL_vLBD4CXsWk1jRMYrzvLCn61qonnxN1pvfxnxk'
-    
-
-//   const oAuth2client=new google.auth.OAuth2(CLIENT_ID,CLIENT_SECRET,REDIRECT_URI)
-//   oAuth2client.setCredentials({refresh_token:REFRESH_TOKEN})
-
-//  async function sendMail(){
-//       try{
-  
-//     const accessToken=await oAuth2client.getAccessToken()
-//     const transport=nodemailer.createTransport({
-//         service:'smtp.gmail.com',
-//         auth:{
-//             type: 'OAuth2',
-//         user: 'navyrocks1999@gmail.com',
-//         clientId: CLIENT_ID,
-//         clientSecret: CLIENT_SECRET,
-//         refreshToken: REFRESH_TOKEN,
-//         accessToken: accessToken
-//         }
-//     })
-    
-//     const mailOptions={
-//         from:'navyrocks1999@gmail.com',
-//         to:'onlinejobhelp1999@gmail.com',
-//         subject:"Reset password",
-//         text:"Please reset your password"
-//     };
-  
-//      const result=await transport.sendMail(mailOptions)
-//      return result
-//       }
-//       catch(error){
-//           return error
-//       }
-//   }
-//   sendMail().then(result=>console.log("Email sent...",result))
-//   .catch((error)=>console.log(error.message));
   transporter.sendMail(mailOptions, function(error, info){
     if (error) {
       console.log("Error aa gya",error);
