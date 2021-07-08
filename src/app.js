@@ -199,7 +199,7 @@ app.post("/emailverification", async (req,res,next)=>{
     userObj.token = resetToken;
    await userObj.save();
 
-    const link = `http://localhost:3000/newpassword?token=${resetToken}&id=${userObj._id}`;
+    const link = `https://defencechampions.herokuapp.com/newpassword?token=${resetToken}&id=${userObj._id}`;
     console.log("mil gya user",link);
         
       var mailOptions = {
