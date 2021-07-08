@@ -97,7 +97,8 @@ app.post("/login", async (req,res)=>{
         console.log("Save Ho Gya");
         res.status(201).render("index");
     }catch(error){
-        res.status(400).send(error);
+        res.send('<script>alert("Sorry Internal Server Error , Please signup again"); window.location.pathname = "/"</script>');
+            
     }
 })
 
