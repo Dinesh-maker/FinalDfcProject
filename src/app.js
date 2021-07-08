@@ -187,8 +187,8 @@ app.post("/emailverification", async (req,res,next)=>{
         host: 'smtp.gmail.com',
         Port: 465,
         auth: {
-          user: 'navyrocks1999@gmail.com',
-          pass: '8377077113'
+          user: 'defencechampions@gmail.com',
+          pass: 'DFC2021@'
         }
 
       });
