@@ -1,5 +1,17 @@
  <script>
   
+  document.addEventListener('visibilitychange', function() {
+    if(document.hidden) {
+        // tab is now inactive
+        // temporarily clear timer using clearInterval() / clearTimeout()
+        audio1.pause();
+        audio2.pause();
+        audio3.pause();
+    }
+    else{
+       
+       
+
 let timer1 = 7 * 60;
     let elseentry=0;
     let stopclicked=0;
@@ -208,29 +220,6 @@ let timer1 = 7 * 60;
      audio3.play();
    }
 
-   document.addEventListener('visibilitychange', function() {
-    if(document.hidden) {
-        // tab is now inactive
-        // temporarily clear timer using clearInterval() / clearTimeout()
-        audio1.pause();
-        audio2.pause();
-        audio3.pause();
     }
-    else{
-        timer1=7*60;
-        timer2=1*60;
-        timer3=1*95;
-        if(timer1){
-            audio1.play()
-        }
-        else if(timer2){
-            audio2.play();
-        }
-        else if(timer3){
-            audio3.play();
-        }
-    }
-   
 });
-
    </script>
