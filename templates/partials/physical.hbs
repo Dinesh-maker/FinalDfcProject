@@ -218,7 +218,10 @@ let timer1 = 7 * 60;
     }
     else{
        
-        alert("Please Refresh The Page");
+       if(!alert('Welcome Back')){
+         window.location.reload();
+       }
+       
     }
    
 });
