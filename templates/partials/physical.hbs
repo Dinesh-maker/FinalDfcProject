@@ -1,0 +1,211 @@
+ <script>
+     
+let timer1 = 7 * 60;
+    let elseentry=0;
+    let stopclicked=0;
+   let intervalId1 = null;
+   let audio1=new Audio('Running.mp3');
+   let isStarted1 = 'false';
+   function updateTime1() {
+     let ele1 = document.getElementById('timer1')
+      let min;
+      let sec;
+      min = Math.floor(timer1 / 60);
+        sec = timer1 % 60;
+     if(timer1 && stopclicked===0) {
+      
+       ele1.innerText = `${min} minutes:: ${sec} seconds`
+       timer1--;
+     }
+     else{
+       elseentry=1;
+        clearInterval(intervalId1);
+       start2.disabled=false;
+     start3.disabled=false;
+     }
+     
+    ele1.innerText = `${min} minutes:: ${sec} seconds`;
+   }
+   
+   let start1 = document.querySelector('#start1');
+   start1.addEventListener('click',() => {
+     start2.disabled=true;
+     start3.disabled=true;
+    stopclicked=0;
+    elseentry=0;
+     timer1=7*60;
+     console.log("start button 1");
+   updateTime1();
+   isStarted1 = 'true';
+   if(elseentry===0){
+   intervalId1 = setInterval(updateTime1, 1000);}
+   audioAuto1(); 
+  
+   });
+   
+    
+  
+   
+   let stop1 = document.querySelector('#stop1');
+   stop1.addEventListener('click',() => {
+   //console.log(isStarted1);
+   stopclicked=1;
+     audio1.pause();
+   
+  
+   });
+   
+   
+   
+   function audioResetAuto1()
+   {
+     audio1.currentTime = 0;
+     audio1.play();
+     
+   }
+   
+   function audioAuto1()
+   {
+     audio1=new Audio('Running.mp3');
+     audio1.play();
+   }
+
+
+
+   //TIMER 2
+
+
+    let elseentry2=0;
+    let stopclicked2=0;
+    let timer2 = 1 * 60;
+   let intervalId2 = null;
+   let audio2=new Audio('pushups.mp3');
+   let isStarted2 = 'false';
+   function updateTime2() {
+     let ele2 = document.getElementById('timer2');
+     let min = Math.floor(timer2 / 60);
+     let sec = timer2 % 60;
+     if(timer2 && stopclicked2===0) {
+       
+       ele2.innerText = `${min} minutes:: ${sec} seconds`
+       timer2--;
+     
+     } else {
+        elseentry2=1;
+        clearInterval(intervalId2);
+        start1.disabled=false;
+     start3.disabled=false;
+     }
+      ele2.innerText = `${min} minutes:: ${sec} seconds`;
+   }
+   
+   
+   
+   
+   let start2 = document.querySelector('#start2');
+   start2.addEventListener('click',() => {
+     start1.disabled=true;
+     start3.disabled=true;
+    stopclicked2=0;
+    elseentry2=0;
+     timer2=1*60;
+     console.log("start button 2");
+   updateTime2();
+   isStarted2 = 'true';
+   if(elseentry2===0){
+   intervalId2 = setInterval(updateTime2, 1000);}
+   audioAuto2();  
+    
+   });
+
+    let stop2 = document.querySelector('#stop2');
+   stop2.addEventListener('click',() => {
+   stopclicked2=1;
+     audio2.pause();
+   
+   });
+   
+   
+   function audioResetAuto2()
+   {
+     audio2.currentTime = 0;
+     audio2.play();
+     
+   }
+   
+   function audioAuto2()
+   {
+     audio2=new Audio('pushups.mp3');
+     audio2.play();
+   }
+
+ // TIMER 3 
+
+
+
+
+    let elseentry3=0;
+    let stopclicked3=0;
+    let timer3 = 1 * 95;
+   let intervalId3 = null;
+   let audio3=new Audio('Squats.mp3');
+   let isStarted3 = 'false';
+   function updateTime3() {
+     let ele3 = document.getElementById('timer3');
+     let min = Math.floor(timer3 / 60);
+     let sec = timer3 % 60;
+     if(timer3 && stopclicked3===0) {
+       
+       ele3.innerText = `${min} minutes:: ${sec} seconds`
+       timer3--;
+     
+     } else {
+        elseentry3=1;
+        clearInterval(intervalId3);
+        start2.disabled=false;
+     start1.disabled=false;
+     }
+      ele3.innerText = `${min} minutes:: ${sec} seconds`;
+   }
+   
+   
+   
+   
+   let start3 = document.querySelector('#start3');
+   start3.addEventListener('click',() => {
+     start1.disabled=true;
+     start2.disabled=true;
+    stopclicked3=0;
+    elseentry3=0;
+     timer3=1*95;
+     console.log("start button 3");
+   updateTime3();
+   isStarted3 = 'true';
+   if(elseentry3===0){
+   intervalId3 = setInterval(updateTime3, 1000);}
+   audioAuto3();  
+   });
+
+    let stop3 = document.querySelector('#stop3');
+   stop3.addEventListener('click',() => {
+   stopclicked3=1;
+     audio3.pause();
+   
+  
+   });
+   
+   
+   function audioResetAuto3()
+   {
+     audio3.currentTime = 0;
+     audio3.play();
+     
+   }
+   
+   function audioAuto3()
+   {
+     audio3=new Audio('Squats.mp3');
+     audio3.play();
+   }
+
+   </script>

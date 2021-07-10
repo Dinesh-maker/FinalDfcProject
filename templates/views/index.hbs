@@ -195,13 +195,13 @@ padding-top: 10px;
     background-color:  #2eb82e;
   }
   
-  #reset1{
+  #stop1{
      border-color:2px solid red; 
     background-color:red  ; 
     color:white;
     padding: 5px 20px;
   }
-   #reset1:hover{
+   #stop1:hover{
     background-color:  #e60000;
   }
 
@@ -219,13 +219,13 @@ padding-top: 10px;
     background-color:  #2eb82e;
   }
   
-  #reset2{
+  #stop2{
      border-color:2px solid red; 
     background-color:red  ; 
     color:white;
     padding: 5px 20px;
   }
-   #reset2:hover{
+   #stop2:hover{
     background-color:  #e60000;
   }
 
@@ -244,13 +244,13 @@ padding-top: 10px;
     background-color:  #2eb82e;
   }
   
-  #reset3{
+  #stop3{
      border-color:2px solid red; 
     background-color:red  ; 
     color:white;
     padding: 5px 20px;
   }
-   #reset3:hover{
+   #stop3:hover{
     background-color:  #e60000;
   }
 
@@ -457,71 +457,11 @@ padding-top: 10px;
       <h5 class="card-title "> <strong style="color:#FF9933;  font-size: 20px; font-weight: 800;">Running Status </strong> </h5>
       <p id="timer1" class="text-center"> <strong style="  font-size: 20px; font-weight:800" > 7 Minute :00 Seconds</strong></p>
   <button id='start1'  >Start</button>
-  <button id='reset1' >Reset</button>
+  <button id='stop1' >Stop</button>
     </div>
   </div>
   </div>
   
-  <script>
-    let timer1 = 7 * 60;
-   let intervalId1 = null;
-   let audio1=new Audio('Running.mp3');
-   let isStarted1 = 'false';
-   function updateTime1() {
-     let ele1 = document.getElementById('timer1')
-     if(timer1) {
-       const min = Math.floor(timer1 / 60);
-       const sec = timer1 % 60;
-       ele1.innerText = `${min} minutes:: ${sec} seconds`
-       timer1--;
-     } else {
-       clearInterval1(intervalId1)
-       ele1.innerText = "Time completed"
-     }
-   }
-   
-   
-   function resetTime1(){
-     let ele1 = document.getElementById('timer1');
-     timer1 = 7*60;   
-    
-   }
-   
-   let reset1 = document.querySelector('#reset1');
-   reset1.addEventListener('click',() => {
-   console.log(isStarted1);
-   resetTime1();
-   if(isStarted1 === 'true'){
-   audioResetAuto1();
-   }
-   });
-   
-   
-   let start1 = document.querySelector('#start1');
-   start1.addEventListener('click',() => {
-     console.log("start button 1");
-   updateTime1();
-   isStarted1 = 'true';
-   intervalId1 = setInterval(updateTime1, 1000);
-   audioAuto1();
-    start1.disabled = true;
-   
-   });
-   
-   function audioResetAuto1()
-   {
-     audio1.currentTime = 0;
-     audio1.play();
-     
-   }
-   
-   function audioAuto1()
-   {
-     audio1=new Audio('Running.mp3');
-     audio1.play();
-   }
-   </script>
-   
   
   <div class="col-sm-4">
   <div class="card ">
@@ -532,10 +472,10 @@ padding-top: 10px;
       <h5 class="card-title text-center"><strong style="font-size:20px; font-weight:800; color:#000080" >Push Up Time </strong> </h5>
       <p id="timer2">1:00</p>
   <button id='start2' >Start</button>
-  <button id='reset2' >Reset</button>
+  <button id='stop2' >Stop</button>
     </div> 
   </div>
-  {{>pushups}};
+  
   </div>
 
   <div class="col-sm-4">
@@ -547,12 +487,12 @@ padding-top: 10px;
       <h5 class="card-title text-center"><strong style="font-size:20px;font-weight: 800; color:#138808">Squats Time </strong> </h5>
       <p id="timer3">1:35</p>
   <button id='start3' >Start</button>
-  <button id='reset3' >Reset</button>
+  <button id='stop3' >Stop</button>
     </div>
   </div>
-  {{>squats}}
+  
   </div>
-
+{{>physical}}
   </div>
   </div>
  <!-- {{>pushups}};
@@ -560,7 +500,7 @@ padding-top: 10px;
 
      <h5 class="text-center" id="latestupdate" > LATEST UPDATES  </h5>
    
-    <div id="carouselExampleIndicators" class="carousel slide " data-ride="carousel" >
+    <div id="demo1" class="carousel slide " data-ride="carousel" >
   <ol class="carousel-indicators">
     <li data-target="#demo1" data-slide-to="0" class="active"></li>
     <li data-target="#demo1" data-slide-to="1"></li>
