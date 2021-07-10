@@ -7,7 +7,6 @@
     <meta name="description" content="Indian Air Force XY Group, Indian Navy AA,SSR, Indian Navy MR,Indian Navy Coast Guard,NDA All Updates Here">
     <meta name="keywords" content="Air Force XY Group, Indian Navy AA,SSR ,Indian Navy MR, Indian Navy Coast Guard,NDA ">
 
-  <meta name="viewport" content="width=device-width, initial-scale=0">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -274,13 +273,29 @@ padding-top: 10px;
      margin-top: 4rem
 }
 @media (min-width:670) and (max-width:820px){
-  #latestupdate{
-     margin-left: 23rem;
+   #latestupdate{
+     margin-left: 18rem;
+     width: 100%;
   }
   #featuredvideo{
-    margin-left: 23rem;
+    margin-left: 18rem;
+    width: 100%;
   }
 }
+#forms{
+    margin-left:-2rem;
+   }
+   #placedoubt{
+     color: blue; 
+     font-family: Arial,Helvetica,sans-serif; 
+     font-size: 30px;
+      font-weight: 800; 
+    text-shadow: 2px 2px 8px #00e1ff; 
+     margin-top: 4rem
+   }
+
+   
+
 @media (min-width: 300px) and ( max-width: 410px){
    #latestupdate{
     font-size: 22px;
@@ -290,7 +305,7 @@ padding-top: 10px;
    }
   }
   #forms{
-    margin-left:-7rem;
+    margin-left:0rem;
    }
 
 @media (min-width: 1250px) and ( max-width: 1326px){
@@ -305,13 +320,25 @@ padding-top: 10px;
     .footer{
     width:72rem;
    }
-   #forms{
-    margin-left: -7rem;
-   }
+  
    .marquee1{
         width: 65rem;
        margin-right: 1rem;
    }
+  }
+   @media (min-width:200px) and (max-width:600px){
+    #forms{
+    margin-left: 0rem;
+   }
+   #latestupdate{
+     width: 100%;
+     margin-left:-10rem;
+   }
+   #featuredvideo{
+     width: 100%;
+     margin-left: -10rem;
+   }
+  
   }
    @media (min-width: 500px) and ( max-width: 1250px){
    .carousel{
@@ -595,8 +622,7 @@ padding-top: 10px;
 
   
 <div class="container-fluid "  style="width: 50rem" >
-      <h3 class="text-center " style=" color: blue; font-family: Arial,Helvetica,sans-serif; font-size: 30px; font-weight: 800; 
-    text-shadow: 2px 2px 8px #00e1ff;  margin-top: 4rem"> PLACE YOUR DOUBT   </h3>
+      <h3 class="text-center " id="placedoubt" > PLACE YOUR DOUBT   </h3>
 
   <form action="/" id="forms" >
   <div class="form-group">
