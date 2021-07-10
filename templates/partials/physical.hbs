@@ -1,5 +1,5 @@
  <script>
-     
+  
 let timer1 = 7 * 60;
     let elseentry=0;
     let stopclicked=0;
@@ -207,5 +207,16 @@ let timer1 = 7 * 60;
      audio3=new Audio('Squats.mp3');
      audio3.play();
    }
+
+   document.addEventListener('visibilitychange', function() {
+    if(document.hidden) {
+        // tab is now inactive
+        // temporarily clear timer using clearInterval() / clearTimeout()
+        audio1.pause();
+        audio2.pause();
+        audio3.pause();
+    }
+   
+});
 
    </script>
