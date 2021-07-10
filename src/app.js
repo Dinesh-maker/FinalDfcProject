@@ -228,6 +228,9 @@ res.send('<script>alert("Email does not exist"); window.location.pathname = "/em
 }
     
 })
+app.get('*',(req,res)=>{
+    res.render("404");
+})
 
 app.listen(port,()=>{
     console.log(`server is connected at ${port}...`);
