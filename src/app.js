@@ -121,10 +121,8 @@ app.post("/registerafter", async(req,res)=>{
     });
 
    if(isMatch){
-    //     storage.setItem("EmaiId",useremail);
-    //     const useremailId=storage.getItem("EmailId");
-    //  const logindisplay = document.querySelector('#loginusername');
-    // logindisplay.innerText=`Welcome ${useremailId}`;
+    const logindisplay = document.querySelector('#loginusername');
+    logindisplay.innerText=`Welcome ${useremailId}`;
             res.status(201).render("index");
         } else{
            
