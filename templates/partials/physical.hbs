@@ -40,7 +40,7 @@ let timer1 = 7 * 60;
    if(elseentry===0){
    intervalId1 = setInterval(updateTime1, 1000);}
    audioAuto1(); 
-  
+    start1.disabled=true;
    });
    
     
@@ -115,7 +115,7 @@ let timer1 = 7 * 60;
    if(elseentry2===0){
    intervalId2 = setInterval(updateTime2, 1000);}
    audioAuto2();  
-    
+    start2.disabled=true;
    });
 
     let stop2 = document.querySelector('#stop2');
@@ -184,6 +184,7 @@ let timer1 = 7 * 60;
    if(elseentry3===0){
    intervalId3 = setInterval(updateTime3, 1000);}
    audioAuto3();  
+   start3.disabled=true;
    });
 
     let stop3 = document.querySelector('#stop3');
