@@ -121,8 +121,8 @@ app.post("/registerafter", async(req,res)=>{
     });
 
    if(isMatch){
-    const logindisplay = document.querySelector('#loginusername');
-    logindisplay.innerText=`Welcome ${email}`;
+    // const logindisplay = document.querySelector('#loginusername');
+    // logindisplay.innerText=`Welcome ${email}`;
             res.status(201).render("index");
         } else{
            
