@@ -121,8 +121,13 @@ app.post("/registerafter", async(req,res)=>{
     });
 
    if(isMatch){
-    const logindisplay = document.querySelector('#loginusername');
-    logindisplay.innerText=`Welcome ${useremailId}`;
+
+    // console.log("ismathced0");
+    // const logindisplay = document.querySelector('#loginusername');
+    // console.log("ismathced");
+    // logindisplay.innerText=`Welcome ${email}`;
+    //   storage.setItem("UserEmail",email);
+    // console.log("ismathced2");
             res.status(201).render("index");
         } else{
            
