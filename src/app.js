@@ -121,8 +121,10 @@ app.post("/registerafter", async(req,res)=>{
     });
 
    if(isMatch){
-    // const logindisplay = document.querySelector('#loginusername');
-    // logindisplay.innerText=`Welcome ${email}`;
+        storage.setItem("EmaiId",useremail);
+        const useremailId=storage.getItem("EmailId");
+     const logindisplay = document.querySelector('#loginusername');
+    logindisplay.innerText=`Welcome ${useremailId}`;
             res.status(201).render("index");
         } else{
            
@@ -133,7 +135,7 @@ app.post("/registerafter", async(req,res)=>{
         }
 
    }catch(error){
-  res.status(400).send("Please Refresh the page");
+  res.status(400).send("Login unsuccessful Something went wrong");
   
    }
 })
