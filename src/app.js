@@ -109,7 +109,8 @@ app.post("/registerafter", async(req,res)=>{
          const email=req.body.email; //which we are filling in body of login form 
          const password=req.body.pwd;
          const useremail= await  Register.findOne({email:email});
-         
+         storage.setItem("EmailId",email);
+
          const isMatch= await bcrypt.compare(password,useremail.password);
          const token=await useremail.generateAuthToken();
          console.log("the token part:"+token);
@@ -122,13 +123,14 @@ app.post("/registerafter", async(req,res)=>{
 
    if(isMatch){
 
-    // console.log("ismathced0");
+     console.log("ismathced0");
     //  var logindisplay = document.getElementById('logindisplay');
-    
-    //  logindisplay.innerHTML=`Welcome jhalak`;
-    //  console.log(logindisplay);
-    //   storage.setItem("UserEmail",email);
-    // console.log("ismathced2");
+    //   console.log(logindisplay);
+    //    storage.setItem("UserEmail",email);
+    //  console.log("ismathced2");
+    //  var getvalue= storage.getItem('EmailId');
+    //  logindisplay.innerHTML=`Welocme ${getvalue}`;
+    //'<script>document.getElementById("logindisplay").innerHTML='+getvalue+'</script>';
             res.status(201).render("index");
         } else{
            
