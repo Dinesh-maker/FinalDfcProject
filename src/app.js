@@ -123,9 +123,10 @@ app.post("/registerafter", async(req,res)=>{
    if(isMatch){
 
     // console.log("ismathced0");
-    // const logindisplay = document.querySelector('#loginusername');
-    // console.log("ismathced");
-    // logindisplay.innerText=`Welcome ${email}`;
+    //  var logindisplay = document.getElementById('logindisplay');
+    
+    //  logindisplay.innerHTML=`Welcome jhalak`;
+    //  console.log(logindisplay);
     //   storage.setItem("UserEmail",email);
     // console.log("ismathced2");
             res.status(201).render("index");

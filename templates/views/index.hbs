@@ -24,6 +24,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+
 <style type="text/css">
 	
  .rows1{
@@ -65,7 +66,7 @@ padding-top: 10px;
     list-style: none;
     font: normal bold 14px/1.2em Arial,Verdana,Helvetica;
     background-color: #000;
-    padding: 14px 23px;
+    padding: 14px 25.8px;
     margin: 1px;
     max-width:12rem;  
 }
@@ -97,14 +98,13 @@ padding-top: 10px;
 .sabseuper{
   margin-top: 25px;
 }
+@media (min-width:100px) and (max-width:1500px){
+  .navbar li {
+    padding: 14px 23px;
+  }
+}
 @media (min-width:200px) and (max-width:600px){
-  #login{
-    padding-right:78.0781px;
-}
 
-.navbar li {
-  padding: 14px 25.5px;
-}
 .sabseuper{
   margin-top: 0px;
 }
@@ -439,7 +439,7 @@ padding-top: 10px;
     </nav>
 </div>
 </div>
-
+<!--<div id="logindisplay"></div>-->
 <div class="marquee1" >
         <marquee  direction="right"  behavior="alternate" scrollamount="8" onmouseover="this.stop();" onmouseout="this.start();" > <img src="New4.gif" width="4%" height="3%" >
             &nbsp; <a href="https://airmenselection.cdac.in/STAR/controller/showSignIn" target="_blank"> AIR FORCE XY GROUP ADMIT CARD OUT 2021 </a>
