@@ -1,5 +1,0 @@
----
-deployment:
-  tasks:
-    - export DEPLOYPATH=/home/defencec/app/
-    - /bin/cp * $DEPLOYPATH
