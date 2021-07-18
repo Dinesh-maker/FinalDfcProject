@@ -14,7 +14,7 @@ const auth= async(req,res,next)=>{
           next();
 
     }catch(error){
-        res.send('<script>alert("Please Login Before Access this page "); window.location.pathname = "/registerafter"</script>');
+        res.send('<script>alert("Please Login Before Accessing This Page "); window.location.pathname = "/registerafter"</script>');
 
     }
 }
