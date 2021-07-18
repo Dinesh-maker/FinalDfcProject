@@ -194,11 +194,11 @@ app.post("/emailverification", async (req,res,next)=>{
     const email=req.body.email;
     const userObj= await  Register.findOne({email:email});
     var transporter = nodemailer.createTransport({
-        host: 'smtp.gmail.com',
+        host: 'www.in10.fcomet.com',
         Port: 465,
         auth: {
-          user: 'defencechampions@gmail.com',
-          pass: 'DFC2021@'
+          user: 'dfc@defencechampions.com',
+          pass: 'dfc2021@'
         }
 
       });
@@ -210,13 +210,13 @@ app.post("/emailverification", async (req,res,next)=>{
     userObj.token = resetToken;
    await userObj.save();
 
-    const link = `https://defencechampions.herokuapp.com/newpassword?token=${resetToken}&id=${userObj._id}`;
+    const link = `https://defencechampions.com/newpassword?token=${resetToken}&id=${userObj._id}`;
     console.log("mil gya user",link);
         
       var mailOptions = {
-        from: 'defencechampions@gmail.com',
+        from: 'dfc@defencechampions.com',
         to: req.body.email,
-        subject: 'Sending Email using Node.js',
+        subject: 'Reset Password Link-DFC',
         html: `Click on this link : <a target="_blank" rel="external" href="${link}">Click Here</a>`
       };
   transporter.sendMail(mailOptions, function(error, info){
