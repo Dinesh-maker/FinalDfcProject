@@ -17,9 +17,6 @@ const {google}=require('googleapis')
 app.use(express.json());
 app.use(cookieparser());
 app.use(express.urlencoded({extended:false})); //to get data from the form not undefined 
-// var mail = require('./config/mailer')();
-// mail.send();
-//const staticpath=path.join(__dirname,"../public");
 const templatepath=path.join(__dirname,"../templates/views");
 const partialspath=path.join(__dirname,"../templates/partials");
 //const imagepath=path.join(__dirname,"../public/images");
@@ -124,10 +121,11 @@ app.post("/registerafter", async(req,res)=>{
    if(isMatch){
 
      console.log("ismathced0");
-    //  var logindisplay = document.getElementById('logindisplay');
-    //   console.log(logindisplay);
-    //    storage.setItem("UserEmail",email);
-    //  console.log("ismathced2");
+      
+     //storage.setItem("UserEmail",email);
+    // console.log(storage.getItem("UserEmail"));
+     
+    // document.querySelector('p').innerHTML=storage.getItem("UserEmail");
     //  var getvalue= storage.getItem('EmailId');
     //  logindisplay.innerHTML=`Welocme ${getvalue}`;
     //'<script>document.getElementById("logindisplay").innerHTML='+getvalue+'</script>';
@@ -141,7 +139,8 @@ app.post("/registerafter", async(req,res)=>{
         }
 
    }catch(error){
-  res.status(400).send("Login unsuccessful Something went wrong");
+   console.log(error);
+    res.status(400).send("Login unsuccessful Something went wrong");
   
    }
 })

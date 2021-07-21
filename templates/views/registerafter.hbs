@@ -153,6 +153,10 @@
     
 }
 
+function validEmail(emailID) {
+    var filter = /^\s*[\w\-\+_]+(\.[\w\-\+_]+)*\@(\bgmail\b)+\.(\bcom\b)+(\.[\w\-\+_]+)*\s*$/;
+    return String(emailID).search (filter) != -1;
+}
      </script>
     
 </body>
