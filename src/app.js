@@ -123,13 +123,13 @@ app.post("/registerafter", async(req,res)=>{
      console.log("ismathced0");
       
      //storage.setItem("UserEmail",email);
-    // console.log(storage.getItem("UserEmail"));
+     //console.log(storage.getItem("UserEmail"));
      
     // document.querySelector('p').innerHTML=storage.getItem("UserEmail");
     //  var getvalue= storage.getItem('EmailId');
     //  logindisplay.innerHTML=`Welocme ${getvalue}`;
     //'<script>document.getElementById("logindisplay").innerHTML='+getvalue+'</script>';
-            res.status(201).render("index");
+        res.status(201).render("index"); 
         } else{
            
             res.send('<script>alert("invalid login details"); window.location.pathname = "/registerafter"</script>');
