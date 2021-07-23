@@ -19,6 +19,8 @@ app.use(cookieparser());
 app.use(express.urlencoded({extended:false})); //to get data from the form not undefined 
 const templatepath=path.join(__dirname,"../templates/views");
 const partialspath=path.join(__dirname,"../templates/partials");
+var passport = require('passport');
+
 //const imagepath=path.join(__dirname,"../public/images");
 //console.log(imagepath);
 //app.use(express.static(staticpath));
@@ -129,7 +131,7 @@ app.post("/registerafter", async(req,res)=>{
     //  var getvalue= storage.getItem('EmailId');
     //  logindisplay.innerHTML=`Welocme ${getvalue}`;
     //'<script>document.getElementById("logindisplay").innerHTML='+getvalue+'</script>';
-        res.status(201).render("index"); 
+        res.status(201).render("index",{ email:req.body.email }); 
         } else{
            
             res.send('<script>alert("invalid login details"); window.location.pathname = "/registerafter"</script>');
