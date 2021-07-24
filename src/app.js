@@ -20,10 +20,8 @@ app.use(express.urlencoded({extended:false})); //to get data from the form not u
 const templatepath=path.join(__dirname,"../templates/views");
 const partialspath=path.join(__dirname,"../templates/partials");
 var passport = require('passport');
+var atob = require('atob');
 
-//const imagepath=path.join(__dirname,"../public/images");
-//console.log(imagepath);
-//app.use(express.static(staticpath));
 app.set("view engine","hbs");
 app.set("views",templatepath);
  hbs.registerPartials(partialspath);
@@ -94,7 +92,7 @@ app.post("/login", async (req,res)=>{
      
         const registered= await  registerStudent.save();
         console.log("Save Ho Gya");
-        res.status(201).render("index");
+        res.send('<script>alert("You are SignUp Successfully "); window.location.pathname = "/"</script>');
     }catch(error){
         res.send('<script>alert("Sorry Internal Server Error , Please signup again"); window.location.pathname = "/"</script>');
             
@@ -124,14 +122,7 @@ app.post("/registerafter", async(req,res)=>{
 
      console.log("ismathced0");
       
-     //storage.setItem("UserEmail",email);
-     //console.log(storage.getItem("UserEmail"));
-     
-    // document.querySelector('p').innerHTML=storage.getItem("UserEmail");
-    //  var getvalue= storage.getItem('EmailId');
-    //  logindisplay.innerHTML=`Welocme ${getvalue}`;
-    //'<script>document.getElementById("logindisplay").innerHTML='+getvalue+'</script>';
-        res.status(201).render("index",{ email:req.body.email }); 
+        res.status(201).render("index",{ email:req.body.email,welocmeMessage : "Welcome"}); 
         } else{
            
             res.send('<script>alert("invalid login details"); window.location.pathname = "/registerafter"</script>');
@@ -153,9 +144,6 @@ app.get("/emailverification",(req,res)=>{
     res.render("emailverification");    
 });
 
-// app.get('/', function(req, res){
-//     res.send('id: ' + req.query.id);
-//   });
 
 app.get("/newpassword",async(req,res)=>{
     const id=req.query.id;
@@ -239,9 +227,46 @@ res.send('<script>alert("Email does not exist"); window.location.pathname = "/em
 }
     
 })
-app.get('*',(req,res)=>{
-    res.render("404");
-})
+
+app.post("/sendemail", async (req,res,next)=>{
+    const entry=await  Register.countDocuments();
+    console.log(entry);
+    var emails=[];
+    var userObj= await  Register.find();
+    for(var i=0;i<entry;i++){
+        emails.push(userObj[i].email);
+        console.log(emails[i]);
+    }
+    var transporter = nodemailer.createTransport({
+        host: 'www.in10.fcomet.com',
+        Port: 465,
+        auth: {
+          user: 'dfc@defencechampions.com',
+          pass: 'dfc2021@'
+        }
+    });
+    let from = `Defencechampions <dfc@defencechampions.com>`
+        var mailOptions = {
+            from: from,
+            bcc: emails,
+            subject: req.body.subject,
+            html:atob(req.body.content) 
+          };
+      transporter.sendMail(mailOptions, function(error, info){
+        if (error) {
+          console.log("Error aa gya",error);
+        } else {
+          console.log('Email sent: ' + info.response);
+         
+        }
+        
+
+      });
+      res.send('<script>alert("Email Sent"); window.location.pathname = "/"</script>')
+    })
+    app.get('*',(req,res)=>{
+        res.render("404");
+    })
 
 app.listen(port,()=>{
     console.log(`server is connected at ${port}...`);
