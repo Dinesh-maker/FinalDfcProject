@@ -3,7 +3,8 @@
 <head>
  
   <script data-ad-client="ca-pub-4637356896763293" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-  
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4637356896763293"
+     crossorigin="anonymous"></script>
   <title>DefenceChampions|Home </title>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XBBMQ1G92T"></script>
   <link href="https://defencechampions.com">
@@ -431,8 +432,7 @@ padding-top: 10px;
      font-family: Arial,Helvetica,sans-serif; 
      font-size: 20px; 
      font-weight: 800; 
-    text-shadow: 2px 2px 8px #00e1ff;
-    
+    text-shadow: 2px 2px 8px #00e1ff; 
       text-align: center;
 }
 
@@ -460,16 +460,22 @@ padding-top: 10px;
             <li><a href="/Mock" >MOCK TESTS</a> </li>
             <li> <a id="notes" href="/notes" >NOTES</a> </li>
             <li > <a id="ct" href="/contactus" >CONTACT US </a></li>
-            <li id="login"> <a href="/login">LOG IN </a>
-         
+            <li id="login" > <a href="/login" >LOG IN </a>
+        
           
            </li>
         </ul>    
     </nav>
 </div>
 </div>
-<p  id="logindisplay">{{welocmeMessage}}&nbsp;{{email}}</p>
-
+ <div id="logindisplay"></div>
+ <script>
+   const para =document.createElement("p");
+   const node=document.createTextNode("{{welocmeMessage}} {{username}} {{lastname}}");
+   para.appendChild(node);
+   const element =document.getElementById("logindisplay");
+   element.appendChild(para);
+ </script>
 <div class="marquee1" >
         <marquee  direction="right"  behavior="alternate" scrollamount="8" onmouseover="this.stop();" onmouseout="this.start();" > <img src="New4.gif" width="4%" height="3%" >
             &nbsp; <a href="/notes" > AIR FORCE XY GROUP 17TH JULY 1+2+3 SHIFT PDF </a>

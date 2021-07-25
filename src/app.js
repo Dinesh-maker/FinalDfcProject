@@ -103,9 +103,12 @@ app.post("/login", async (req,res)=>{
 //login check
 app.post("/registerafter", async(req,res)=>{
    try{  
+          
          const email=req.body.email; //which we are filling in body of login form 
          const password=req.body.pwd;
          const useremail= await  Register.findOne({email:email});
+        const username=useremail.firstname;
+        const lastname=useremail.lastname;
          storage.setItem("EmailId",email);
 
          const isMatch= await bcrypt.compare(password,useremail.password);
@@ -122,7 +125,7 @@ app.post("/registerafter", async(req,res)=>{
 
      console.log("ismathced0");
       
-        res.status(201).render("index",{ email:req.body.email,welocmeMessage : "Welcome"}); 
+        res.status(201).render("index",{ username:username,lastname:lastname,welocmeMessage : "Welcome"}); 
         } else{
            
             res.send('<script>alert("invalid login details"); window.location.pathname = "/registerafter"</script>');
