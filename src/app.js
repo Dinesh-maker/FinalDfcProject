@@ -66,6 +66,33 @@ app.get("/liveclasses",(req,res)=>{
     res.render("liveclasses");
 
 })
+app.get("/Physicaltimer",(req,res)=>{
+  res.render("Physicaltimer");
+
+})
+app.get("/Womensentries",(req,res)=>{
+  res.render("Womensentries");
+
+})
+app.get("/Indiancoastguard",(req,res)=>{
+  res.render("Indiancoastguard");
+
+})
+app.get("/Ndawomen",(req,res)=>{
+  res.render("Ndawomen");
+})
+app.get("/mahilayenda",(req,res)=>{
+  res.render("mahilayenda");
+
+})
+app.get("/Whyresultlate",(req,res)=>{
+  res.render("Whyresultlate");
+
+})
+app.get("/newairforcechief",(req,res)=>{
+  res.render("newairforcechief");
+
+})
 app.get("/login",(req,res)=>{
     res.render("login");
 })
