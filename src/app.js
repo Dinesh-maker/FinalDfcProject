@@ -93,6 +93,10 @@ app.get("/newairforcechief",(req,res)=>{
   res.render("newairforcechief");
 
 })
+app.get("/Airforceresult",(req,res)=>{
+  res.render("Airforceresult");
+
+})
 app.get("/login",(req,res)=>{
     res.render("login");
 })
