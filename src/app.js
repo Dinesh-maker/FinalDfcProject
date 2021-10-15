@@ -97,6 +97,10 @@ app.get("/Airforceresult",(req,res)=>{
   res.render("Airforceresult");
 
 })
+app.get("/AASSR2022",(req,res)=>{
+  res.render("AASSR2022");
+
+})
 app.get("/login",(req,res)=>{
     res.render("login");
 })
