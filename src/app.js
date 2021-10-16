@@ -101,6 +101,11 @@ app.get("/AASSR2022",(req,res)=>{
   res.render("AASSR2022");
 
 })
+app.get("/sitemap",(req,res)=>{
+  res.render("sitemap");
+
+})
+
 app.get("/login",(req,res)=>{
     res.render("login");
 })
