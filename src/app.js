@@ -281,7 +281,7 @@ app.post("/sendemail", async (req,res,next)=>{
         console.log(emails[i]);
     }
     var transporter = nodemailer.createTransport({
-        host: 'www.in10.fcomet.com',
+        host: 'in10.fcomet.com',
         Port: 465,
         auth: {
           user: 'dfc@defencechampions.com',
