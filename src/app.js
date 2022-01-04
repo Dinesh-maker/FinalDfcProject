@@ -105,6 +105,10 @@ app.get("/NDA2022",(req,res)=>{
   res.render("NDA2022");
 
 })
+app.get("/Iafenrollment2020",(req,res)=>{
+  res.render("Iafenrollment2020");
+
+})
 app.get("/sitemap",(req,res)=>{
   res.render("sitemap");
 
