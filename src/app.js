@@ -109,6 +109,10 @@ app.get("/Iafenrollment2020",(req,res)=>{
   res.render("Iafenrollment2020");
 
 })
+app.get("/Airforcenewvacancyexpectation2022",(req,res)=>{
+  res.render("Airforcenewvacancyexpectation2022");
+
+})
 app.get("/sitemap",(req,res)=>{
   res.render("sitemap");
 
