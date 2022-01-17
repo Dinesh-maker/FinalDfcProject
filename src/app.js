@@ -113,6 +113,10 @@ app.get("/Airforcenewvacancyexpectation2022",(req,res)=>{
   res.render("Airforcenewvacancyexpectation2022");
 
 })
+app.get("/AASSRAUG2022EX",(req,res)=>{
+  res.render("AASSRAUG2022EX");
+
+})
 app.get("/sitemap",(req,res)=>{
   res.render("sitemap");
 
