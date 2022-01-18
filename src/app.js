@@ -121,6 +121,10 @@ app.get("/Coastguardexamcity2022",(req,res)=>{
   res.render("Coastguardexamcity2022");
 
 })
+app.get("/Nda1admitcard2022",(req,res)=>{
+  res.render("Nda1admitcard2022");
+
+})
 
 app.get("/sitemap",(req,res)=>{
   res.render("sitemap");
