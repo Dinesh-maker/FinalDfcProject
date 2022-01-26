@@ -125,6 +125,22 @@ app.get("/Nda1admitcard2022",(req,res)=>{
   res.render("Nda1admitcard2022");
 
 })
+app.get("/MRResult2022",(req,res)=>{
+  res.render("MRResult2022");
+
+})
+app.get("/NDAsecond2022",(req,res)=>{
+  res.render("NDAsecond2022");
+
+})
+app.get("/NdaSyllabus",(req,res)=>{
+  res.render("NdaSyllabus");
+
+})
+app.get("/NDAPYQ",(req,res)=>{
+  res.render("NDAPYQ");
+
+})
 
 app.get("/sitemap",(req,res)=>{
   res.render("sitemap");
