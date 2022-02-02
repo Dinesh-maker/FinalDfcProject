@@ -139,7 +139,12 @@ app.get("/NdaSyllabus",(req,res)=>{
 })
 app.get("/NDAPYQ",(req,res)=>{
   res.render("NDAPYQ");
-
+})
+app.get("/Navysyllabus",(req,res)=>{
+  res.render("Navysyllabus");
+})
+app.get("/Airforcesyllabus",(req,res)=>{
+  res.render("Airforcesyllabus");
 })
 
 app.get("/sitemap",(req,res)=>{

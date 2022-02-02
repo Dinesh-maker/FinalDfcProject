@@ -22,7 +22,8 @@ how to fill airforce x and y group form? Complete Information...">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <style type="text/css">
  body{
-   background-color: rgb(74, 74, 221);
+ /*  background-color: rgb(12, 12, 141);*/
+    background-image: url(iafbackground.jpg)
  }
 
   .images{
@@ -79,6 +80,7 @@ how to fill airforce x and y group form? Complete Information...">
   margin-left: -1rem;
   margin-top: 2rem;
 }
+/*
 .videos img{
 		width: 100%;
 		height: 30rem;
@@ -161,11 +163,23 @@ how to fill airforce x and y group form? Complete Information...">
     font-size: 18px;
     margin-left: 1rem;
   } 
+*/
+ .nav-link{
+		font-family: 'Noto Sans JP', sans-serif; 
+		
+		font-weight: 800;
+		font-size: 18px;
+	 
+	}
+  .navbar-light .navbar-toggler {
+    color: rgb(234 222 222 / 50%);
+    border-color: rgb(243 231 231 / 99%);
+}
 </style>
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg  navbar-light mt-2 " >
+{{!-- <nav class="navbar navbar-expand-lg  navbar-light mt-2 " >
 <a class="navbar-brand" href="#" style="font-family: 'Noto Sans JP', sans-serif; color:  #a5f3ff;font-weight: 800;font-size: 20px">Defence Champions </a> 
   <button style="border-color: 2px solid white" class="navbar-toggler bg-white" type="button " data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -199,20 +213,56 @@ how to fill airforce x and y group form? Complete Information...">
     </ul>
   </div>
 </nav>
+ --}}
 
-
-
- <div class="container mt-3" >
-   <div  class="row" >
-     <div class="col-sm-6 ">
-       <div class="card text-center h-100">
-  <div class="card-header" style=" background: linear-gradient(#c8e5ff, #ffffff); border-color: #ddd;font-family: Arial,Helvetica,sans-serif; font-size: 20px; font-weight: 800">
-      Latest News
+<nav class="navbar navbar-expand-lg  navbar-light " >
+<a class="navbar-brand" href="#" style="font-family: 'Noto Sans JP', sans-serif; color:  #a5f3ff;font-weight: 800;font-size: 22px">Indian Air Force</a> 
+  <button style="border-color: 2px solid white" class="navbar-toggler bg-white" type="button " data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-center " id="navbarNav">
+    <ul class="navbar-nav d-flex ">
+      <li class="nav-item active">
+        <a class="nav-link text-white p-3" href="/">Home </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white p-3 " href="/nda">NDA </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white p-3" href="/indiannavy">Indian Navy </a>
+      </li>
+         <li class="nav-item">
+        <a class="nav-link text-white p-3 " href="/Indiancoastguard">Coast Guard </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white p-3" href="/liveclasses">Live classes </a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link text-white p-3" href="/Mock">Mock Tests </a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link text-white p-3" href="/notes">Notes </a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link text-white p-3" href="/contactus">Contact Us </a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link text-white p-3" href="/login">Log In  </a>
+      </li>
+    </ul>
   </div>
-  <div class="card-body">
-   
+</nav>
+<div class="container-fluid mt-3" >
+   <div  class="row " >
+     <div class="col-md-6 ">
+       <div class="card text-center h-80">
+  <div class="card-header" style=" background: linear-gradient(#c8e5ff, #ffffff); border-color: #ddd;font-family: Arial,Helvetica,sans-serif; font-size: 20px; font-weight: 800">
+     New Updates
+  </div>
+  <div class="card-body"  style="box-shadow: 0 10px 16px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%) !important;
+">
     <marquee direction="up" height="300px" scrollamount="2" onmouseover="this.stop();" onmouseout="this.start();" >
-            <ul>
+           <ul>
                   {{!-- <li>  <a href="/Airforceresult" > Air Force XY Group Intake 01/2022 Result Out</a>&nbsp;
                <img src="New4.gif" width="8%" height="5%" >  </li><br> --}}
                 <li>  <a href="/Whyresultlate" > Air Force XY Group 2021 का रिज़ल्ट क्यों नही आ रहा?</a>&nbsp;
@@ -228,22 +278,22 @@ how to fill airforce x and y group form? Complete Information...">
         
             </ul>
         </marquee>
-        
-  </div>
-  <div class="card-footer text-muted">
-   Day by Day updates
+  <div class="card-footer text-muted mt-3">
+ Indian Air Force 2022 Batch
   </div>
 </div>
      </div>
+     </div>
  <br>
-  <div class="col-sm-6 ">
+ <br>
+  <div class="col-md-6 mt-1">
        <div class="card text-center h-100">
   <div class="card-header" style=" background: linear-gradient(#c8e5ff, #ffffff); border-color: #ddd;font-family: Arial,Helvetica,sans-serif; font-size: 20px; font-weight: 800">
-       Indian Air Force 
+Indian Air Force
   </div>
-  <div class="card-body">
-   
-   <div id="demo" class="carousel slide" data-ride="carousel" >
+  <div class="card-body"  style="box-shadow: 0 10px 16px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%) !important;
+">
+      <div id="demo" class="carousel slide" data-ride="carousel" >
 
   <!-- Indicators -->
   <ul class="carousel-indicators">
@@ -254,18 +304,18 @@ how to fill airforce x and y group form? Complete Information...">
   </ul>
 
   <!-- The slideshow -->
-  <div class="carousel-inner images">
-    <div class="carousel-item active">
-      <img src="iaf4.jpg" alt="iaf1" height="346" width="538">
+  <div class="carousel-inner ">
+    <div class="carousel-item active">      
+      <img class="images" src="iaf4.jpg" alt="iaf1" height="290" width="538">
     </div>
-    <div class="carousel-item" >
-      <img src="iaf2.jpg" alt="iaf2" height="346" width="538">
-    </div>
-    <div class="carousel-item">
-      <img src="iaf3.jpg" alt="iaf3" height="346" width="538">
+    <div  class="carousel-item" >
+      <img class="images" src="iaf2.jpg" alt="iaf2" height="290" width="538">
     </div>
     <div class="carousel-item">
-      <img src="iaf1.jpg" alt="iaf4" height="346" width="538">
+      <img class="images" src="iaf3.jpg" alt="iaf3" height="290" width="538">
+    </div>
+    <div class="carousel-item">
+      <img class="images" src="iaf1.jpg" alt="iaf4" height="290" width="538">
     </div>
   </div>
 
@@ -279,17 +329,104 @@ how to fill airforce x and y group form? Complete Information...">
 
 </div>
 
-        
+  <div class="card-footer text-muted mt-3">
+  Jai Hind Jai Bharat
   </div>
-  <div class="card-footer text-muted">
-   Jai Hind Jai Bharat 
   </div>
+  
 </div>
      </div>
 
    </div>
- </div>
-<div class="container mt-4 cards">
+   </div>
+
+
+<div class="container-fluid mt-3" >
+   <div  class="row " >
+     <div class="col-md-6 ">
+       <div class="card text-center h-60">
+  <div class="card-header" style=" border-color: #ddd;font-family: Arial,Helvetica,sans-serif; font-size: 20px; font-weight: 800;background-color:#120870;color:rgb(255, 253, 253)">
+    Indian Air Force Vacancy 2021 
+  </div>
+  <div class="card-body"  style="box-shadow: 0 10px 16px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%) !important;
+">  
+ <table class="table table-bordered mt-5">
+  <thead>
+    <tr>
+      <th colspan="2" class="text-center" style="font-size: 27px; font-weight:800;"> IAF XY Group 2021 Batch</th>
+       
+    </tr>
+  </thead>
+  <tbody>
+     <tr>
+      <th scope="row">Application Date </th>
+      <td><b>22/01/2021</b></td>
+    </tr>
+     <tr>
+      <th scope="row">Date Of Birth </th>
+      <td><b>16/01/2001 to 29/12/2004</b></td>
+      
+    </tr>
+     <tr>
+      <th scope="row">Exam Date</th>
+      <td ><b>12/07/2021 to 18/07/2021</b></td>
+     
+    </tr>
+  
+  </tbody>
+</table>
+
+
+  <div onclick="location.href='/Airforceresult';"class="card-footer text-muted mt-3; bg-primary">
+  <a href="/Airforceresult" class="text-center text-white ">Read More >></a> 
+  </div>
+</div>
+     </div>
+     </div>
+ <br>
+ <br>
+  <div class="col-md-6 mt-1">
+        <div class="card text-center h-60">
+  <div class="card-header" style=" border-color: #ddd;font-family: Arial,Helvetica,sans-serif; font-size: 20px; font-weight: 800;background-color:#120870;color:rgb(255, 253, 253)">
+    Indian Air Force XY Group Syllabus & Eligibility
+  </div>
+  <div class="card-body"  style="box-shadow: 0 10px 16px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%) !important;
+">  
+ <table class="table table-bordered mt-5">
+  <thead>
+    <tr>
+      <th colspan="2" class="text-center" style="font-size: 27px; font-weight:800;">Air Force XY Group SYllabus & Eligibility</th>
+       
+    </tr>
+  </thead>
+  <tbody>
+       <tr>
+      <th scope="row">Total No Of Question(Y Group)</th>
+      <td><b>50</b></td>
+    </tr>
+     <tr>
+      <th scope="row">Age Limit</th>
+      <td><b>16 to 19.5 Y </b></td> 
+    </tr>
+    <tr>
+      <th scope="row">Air Force 'XY' Group Medical(Video)  </th>
+      <td><a class="text-danger" href="https://youtu.be/908Pr_QCEvU"><b>Click Here</b></a></td>
+    </tr>
+  
+  </tbody>
+</table>
+<div onclick="location.href='/Airforcesyllabus';"class="card-footer text-muted mt-3; bg-primary">
+  <a href="/Airforcesyllabus" target="_blank"  class="text-center text-white ">Read More >></a> 
+  </div>
+</div>
+     </div>
+     </div>
+
+   </div>
+</div>
+
+ 
+{{!-- <div class="container mt-4 cards">
   <div class="row">
     <div class="col-sm-12">
       <div class="card text-center h-100">
@@ -425,8 +562,8 @@ enrolment is 21 years.<br> (जिनका जन्म 16 January 2001 to 29 D
    
     </div>
   </div>
-</div> 
-
+</div>  --}}
+{{!-- 
   <div class="container mb-5 mt-3 carous" >
   
     <div id="carouselExampleIndicators" class="carousel slide " data-ride="carousel" >
@@ -456,7 +593,7 @@ enrolment is 21 years.<br> (जिनका जन्म 16 January 2001 to 29 D
   </a>
 </div>  
 </div>
-</div>
+</div> --}}
 <div class="container-fluid bg-dark mt-3 p-5 foot">
  <marquee  direction="right"  behavior="alternate" scrollamount="8" onmouseover="this.stop();" onmouseout="this.start();" >
    <a href="https://www.youtube.com/channel/UC4JlLJVmyitEpbiSUL_9ssA" target="_blank" style="color:white;font-family: Arial,Helvetica,sans-serif; font-size: 20px; font-weight: 800; text-decoration: none"> PLEASE SUBSCRIBE OUR CHANNEL AND PRESS BELL ICON  </a>
