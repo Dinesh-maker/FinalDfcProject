@@ -158,6 +158,9 @@ app.get("/login",(req,res)=>{
 app.get("/registerafter",(req,res)=>{
     res.render("registerafter");
 });
+app.get("/Womensailor",(req,res)=>{
+  res.render("Womensailor");
+});
 app.post("/login", async (req,res)=>{
     try{
         console.log("Hii everone");
