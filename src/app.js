@@ -161,6 +161,18 @@ app.get("/registerafter",(req,res)=>{
 app.get("/Womensailor",(req,res)=>{
   res.render("Womensailor");
 });
+app.get("/Aganipath",(req,res)=>{
+  res.render("Aganipath");
+});
+app.get("/NAVYAGANIVEER",(req,res)=>{
+  res.render("NAVYAGANIVEER");
+});
+app.get("/IAFAGANIVEER",(req,res)=>{
+  res.render("IAFAGANIVEER");
+});
+app.get("/ARMYAGANIVEER",(req,res)=>{
+  res.render("ARMYAGANIVEER");
+});
 app.post("/login", async (req,res)=>{
     try{
         console.log("Hii everone");
