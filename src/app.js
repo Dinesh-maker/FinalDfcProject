@@ -173,6 +173,18 @@ app.get("/IAFAGANIVEER",(req,res)=>{
 app.get("/ARMYAGANIVEER",(req,res)=>{
   res.render("ARMYAGANIVEER");
 });
+app.get("/IAFAGANIVEERADMITCARD",(req,res)=>{
+  res.render("IAFAGANIVEERADMITCARD");
+});
+app.get("/NAVYAGANIVEERONLINEFORM",(req,res)=>{
+  res.render("NAVYAGANIVEERONLINEFORM");
+});
+app.get("/NAVYADMITCARD2022",(req,res)=>{
+  res.render("NAVYADMITCARD2022");
+});
+app.get("/NAVYRESULT2022",(req,res)=>{
+  res.render("NAVYRESULT2022");
+});
 app.post("/login", async (req,res)=>{
     try{
         console.log("Hii everone");
