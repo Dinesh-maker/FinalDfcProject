@@ -176,6 +176,9 @@ app.get("/ARMYAGANIVEER",(req,res)=>{
 app.get("/IAFAGANIVEERADMITCARD",(req,res)=>{
   res.render("IAFAGANIVEERADMITCARD");
 });
+app.get("/IAFAGANIVEERRESULT2022",(req,res)=>{
+  res.render("IAFAGANIVEERRESULT2022");
+});
 app.get("/NAVYAGANIVEERONLINEFORM",(req,res)=>{
   res.render("NAVYAGANIVEERONLINEFORM");
 });
