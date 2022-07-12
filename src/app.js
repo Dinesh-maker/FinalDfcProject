@@ -188,6 +188,9 @@ app.get("/NAVYADMITCARD2022",(req,res)=>{
 app.get("/NAVYRESULT2022",(req,res)=>{
   res.render("NAVYRESULT2022");
 });
+app.get("/MRAGANIVEER2022",(req,res)=>{
+  res.render("MRAGANIVEER2022");
+});
 app.post("/login", async (req,res)=>{
     try{
         console.log("Hii everone");
