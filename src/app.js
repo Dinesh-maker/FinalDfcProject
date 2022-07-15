@@ -305,7 +305,7 @@ app.post("/emailverification", async (req,res,next)=>{
     const email=req.body.email;
     const userObj= await  Register.findOne({email:email});
     var transporter = nodemailer.createTransport({
-        host: 'www.in10.fcomet.com',
+        host: 'in10.fcomet.com',
         Port: 465,
         auth: {
           user: 'dfc@defencechampions.com',
