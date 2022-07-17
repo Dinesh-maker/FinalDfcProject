@@ -191,6 +191,12 @@ app.get("/NAVYRESULT2022",(req,res)=>{
 app.get("/MRAGANIVEER2022",(req,res)=>{
   res.render("MRAGANIVEER2022");
 });
+app.get("/coastguard2022",(req,res)=>{
+  res.render("coastguard2022");
+});
+app.get("/coastguard012023",(req,res)=>{
+  res.render("coastguard012023");
+});
 app.post("/login", async (req,res)=>{
     try{
         console.log("Hii everone");
