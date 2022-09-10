@@ -51,7 +51,7 @@ studentSchema.pre("save",async function(next){
     next();
 })
 
-//collection name 
+//collection name 1
 const Register= new mongoose.model("Register",studentSchema);
 
 module.exports=Register;

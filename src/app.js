@@ -366,11 +366,11 @@ app.post("/sendemail", async (req,res,next)=>{
         console.log(emails[i]);
     }
     var transporter = nodemailer.createTransport({
-        host: 'in10.fcomet.com',
+        host: 'mail.defencechampions.com',
         Port: 465,
         auth: {
-          user: 'dfc@defencechampions.com',
-          pass: 'dfc2021@'
+          user: 'mail@defencechampions.com',
+          pass: 'Dinesh@2022'
         }
     });
     let from = `Defencechampions <dfc@defencechampions.com>`
