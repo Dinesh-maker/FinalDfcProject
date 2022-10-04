@@ -23,6 +23,12 @@
 <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
 <meta name="google-site-verification" content="CKUuu5bY3OD1qzK_YY9Z0rDWvZHZHcBLYjkAj3ASPbw" /> 
 <script src="https://www.wpromotions.eu/confetti.min.js"></script>
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css">
+    
+
 
 <style>
    .nav-link{
@@ -58,8 +64,8 @@
       
     }
     .newimg{
-  width: 7%;
-  height: 6%;
+  width: 8%;
+  height: 7%;
 }
      
         }
@@ -79,15 +85,15 @@
   border: 0;
   
 }
-  #placedoubt{
+ /* #placedoubt{
      color: blue; 
      font-family: Arial,Helvetica,sans-serif; 
      font-size: 25px;
       font-weight: 800; 
     text-shadow: 2px 2px 8px #00e1ff; 
      margin-top: 4rem
-   }
-
+   }*/
+ 
 button[type=submit]{
   background-color: rgb(25, 25, 155);
     color: white;
@@ -109,7 +115,7 @@ button[type=submit]{
     font-size: 18px;
     font-weight: 800;
 }
-.nichevalaformcontrol{
+/*.nichevalaformcontrol{
   
     padding: 12px;
     border: 1px solid #ccc;
@@ -117,7 +123,7 @@ button[type=submit]{
     box-sizing: border-box;
     resize: vertical;
     box-shadow: inset 2px 3px 4px rgb(148, 213, 243);
-}
+}*/
 .bt1 {
   width: 70px;
   height: 65px;
@@ -167,9 +173,14 @@ button[type=submit]{
 .video-overlay {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 42%;
     transform: translateX(-50%) translateY(-50%);
-  z-index: 10;
+  z-index: 1;
+}
+.video-overlay img{
+      height: 3rem;
+    width: 4rem;
+    border-radius: 5px;
 }
  @media (min-width: 200px) and (max-width: 600px){
    #republicimg{
@@ -181,6 +192,149 @@ button[type=submit]{
      height: 350px;
    }
  }
+ 
+/*.headerimg{
+  width: 100%;
+  height: 300px;
+} */
+ @media (min-width:800px) and (max-width:1400px) {
+.headerimg1{
+     background-image: url(frontphoto.jpg);
+      background-repeat: no-repeat;
+       background-size: 100% 100%;      
+}
+.headerimg2{
+   background-image: url(photo1.jpg);
+      background-repeat: no-repeat;
+     background-size: 100% 150%;
+        
+}
+.headerimg3{
+   background-image: url(airforcedesktopimg2.webp);
+      background-repeat: no-repeat;
+        background-size: 100% 160%;
+}
+.headerimg4{
+   background-image: url(navydesktopimg.jpg);
+      background-repeat: no-repeat;
+      background-size: 100% 155%;
+}
+.headimg{
+  height: 296px;
+}
+ }
+ 
+  @media (min-width:200px) and (max-width:800px) {
+/* .headerimg{
+  width: 100%;
+  height: 270px;} */
+  .headerimg1{
+     background-image: url(frontphoto.jpg);
+      background-repeat: no-repeat;
+       background-size: 100% 100%;  
+       
+
+}
+.headerimg2{
+   background-image: url(airforcephoneimg.jpg);
+      background-repeat: no-repeat;
+     background-size: 100% 100%;
+        
+}
+.headerimg3{
+   background-image: url(photo3.jpg);
+      background-repeat: no-repeat;
+        background-size: 100% 100%;
+}
+.headerimg4{
+   background-image: url(photo1.jpg);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+}
+  .headimg{
+  height: 21vh;
+}
+  marquee{
+    font-size: 16px;
+  }
+ 
+}
+
+ }
+ .dot {
+  height: 25px;
+  width: 25px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+ .counter{
+      color: rgb(10, 24, 146);
+    font-size: 28px;
+    font-weight: 700;
+   }
+  .counter-text {  
+     font-size: 25px;
+    color: rgb(10, 24, 146);
+    font-weight: 700;
+ }
+.home-update-box{
+   border: 1px solid rgb(0 0 0/20%);
+    padding: 15px 15px 0;
+}
+.home-update-box h3{
+  font-size: 20px;
+    padding: 0 0 15px;
+    margin: 0 0 15px;
+    border-bottom: 1px solid #0071dc;
+}
+.home-update-box ul{
+      padding: 0;
+    margin: 0 0 20px;
+    height: 260px;
+    overflow: auto;
+}
+.home-update-box ul li {
+    position: relative;
+    list-style: none;
+    padding-left: 25px;
+    margin: 0 0 15px;
+}
+.home-update-box ul li a{
+   color: rgb(73, 71, 71);
+   text-decoration: none;
+}
+.home-update-box ul li:before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: 0;
+    top: 3px;
+    background-image: url(check-circle.svg);
+    filter: invert(40%) sepia(24%) saturate(1739%) hue-rotate(62deg) brightness(98%) contrast(95%);
+}
+/* Chatboot css */
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+  border:none;
+    cursor: pointer;
+    position: fixed;
+    bottom: 10px;
+    right: -195px;
+    width: 280px;
+   
+}
+.bxs-chat{
+  color:#1840aa;
+}
+.askdoubt{
+ font-weight:700;
+ margin-left: -18px;
+}
+
+
+
 </style> 
 
 </head>
@@ -208,9 +362,45 @@ button[type=submit]{
 },6000) 
  
 </script> -->
-     <div >
-      <img src="frontphoto.jpg" style="width: 100%; height:17rem"  >
-    </div> 
+     <header >
+      {{!-- <img src="frontphoto.jpg" style="width: 100%; height:17rem"  > --}}
+      <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel" data-interval="2500" data-pause="false">
+  
+    <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" style=" height: 15px; width: 20px; background-color: rgb(255, 255, 255);border-radius: 50%;
+  display: inline-block;" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" style=" height: 15px;width: 17px;background-color: rgb(255, 255, 255);border-radius: 50%; display: inline-block;" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" style=" height: 15px; width: 17px; background-color: rgb(255, 255, 255); border-radius: 50%; display: inline-block;" data-slide-to="2"></li>
+ <li data-target="#carouselExampleIndicators" style=" height: 15px; width: 17px; background-color: rgb(255, 255, 255); border-radius: 50%; display: inline-block;" data-slide-to="3"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active headimg headerimg1">
+      {{!-- <img class="d-block " src="photo2.jpg"   alt="First slide"> --}}
+    
+    </div>
+    <div class="carousel-item headimg headerimg2">
+      {{!-- <img class="d-block " src="navyagniveer.jpg"  alt="Second slide"> --}}
+  
+    </div>
+    <div class="carousel-item headimg headerimg3">
+      {{!-- <img class="d-block " src="navyagniveer.jpg"  alt="Third slide"> --}}
+     
+    </div>
+    <div class="carousel-item headimg headerimg4">
+      {{!-- <img class="d-block " src="frontphoto.jpg"  alt="Third slide"> --}}
+     
+    </div>
+  </div>
+  {{!-- <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon "  aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a  class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only" >Next</span>
+  </a> --}}
+</div>
+    </header> 
   <nav class="navbar navbar-expand-lg  navbar-light " style="background-color:   #00004d">
 <a class="navbar-brand" href="#" style="font-family: 'Noto Sans JP', sans-serif; color:  #00dcff;font-weight: 800;font-size: 20px">Defence Champions </a> 
   <button style="border-color: 2px solid white" class="navbar-toggler bg-white" type="button " data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -248,20 +438,21 @@ button[type=submit]{
 <div class="marquee1" >
 
         <marquee  direction="right"  behavior="alternate" scrollamount="4" onmouseover="this.stop();" onmouseout="this.start();" > <img class="newimg" src="New4.gif"  >
-            &nbsp; <a href="https://youtu.be/b3wDk-C-1VY" >INDIAN COAST GUARD NEW VACANCY</a>
+            &nbsp; <a href="https://youtu.be/GFSuroBtWWY" >INDIAN NAVY WOMEN'S ENTRY</a>
         <b>||</b>
-       <a href="https://youtu.be/EUZavAuPJpc" target="_blank">INDIAN AIR FORCE MEDICAL REVIEW</a>
+       <a href="https://youtu.be/5FEh4CfcIc8" target="_blank">INDIAN NAVY CUT OFF</a>
         </marquee>
     </div>
     <div class="marquee1" >
-        <marquee  direction="left"  behavior="alternate" scrollamount="6" onmouseover="this.stop();" onmouseout="this.start();" ><img class="newimg" src="New4.gif" > &nbsp;<a href="/Aganipath" target="_blank" >Indian Coast Guard Phase 2 Result out</a>
-        <b>||</b>
-        <a href="/MRAGANIVEER2022" target="_blank">INDIAN NAVY MR 01/2022 NOTIFICATION OUT</a>
+        <marquee  direction="left"  behavior="alternate" scrollamount="4" onmouseover="this.stop();" onmouseout="this.start();" ><img class="newimg" src="New4.gif" > 
+        <a href="https://youtu.be/q5yyuc46oqQ" target="_blank">INDIAN NAVY AA/SSR ADMIT CARD OUT</a>
         </marquee>
         <marquee  direction="left"  behavior="alternate" scrollamount="5" onmouseover="this.stop();" onmouseout="this.start();" >
          <img class="newimg" src="New4.gif"  >
-         <a href="https://youtu.be/fdlS_ZwWg5E" target="_blank"> INDIAN AIR FORCE PHASE 2 PROCESS</a>
+         <a href="/Airforce012023" target="_blank"> INDIAN AIR FORCE NEW VACANCY NOTIFICATION OUT</a>
         </marquee>
+        </div>
+      <div class="container-fluid mt-3 ml-2">  
    <div class="row mt-3 mr-1">
       <div class=" col-lg-4 mt-1">
        <a href="/indianairforce"> <span class="badge  w-100 p-3 text-white" style="background-color: #ec1c0d;font-family: 'Noto Sans JP', sans-serif; 
@@ -269,13 +460,13 @@ button[type=submit]{
     font-size: 16px;box-shadow: 0 3px 2px #999; " >Air Force XY Group </span></a>
       
        </div>
-        <div class=" col-lg-4 mt-1">
+        <div class=" col-lg-4 mt-2">
          <a href="/indiannavy"><span class="badge  badge-primary w-100 p-3  " style="background-color: #f1f1f1;font-family: 'Noto Sans JP', sans-serif; 
     font-weight: 700;
     font-size: 16px; color:#00004d;box-shadow: 0 3px 2px #999;">Indian Navy AA,SSR </span></a>
       
        </div>
-        <div class=" col-lg-4 mt-1">
+        <div class=" col-lg-4 mt-2">
        <a href="/nda"><span class="badge badge-primary  w-100 p-3 text-white " style="background-color: #078317;font-family: 'Noto Sans JP', sans-serif; 
     font-weight: 700;
     font-size: 16px;box-shadow: 0 3px 2px #999;"  >National Defence Academy(NDA) </span></a>
@@ -283,19 +474,19 @@ button[type=submit]{
        </div>
    </div>
    <div class="row mt-3 mr-1">
-      <div class=" col-lg-4 mt-1">
+      <div class=" col-lg-4 mt-2">
        <a href="/Physicaltimer"> <span class="badge  w-100 p-3 text-white" style="background-color: #ec1c0d;font-family: 'Noto Sans JP', sans-serif; 
     font-weight: 700;
     font-size: 16px;box-shadow: 0 3px 2px #999;" >Physical Practice With Timer </span></a>
       
        </div>
-        <div class=" col-lg-4 mt-1">
+        <div class=" col-lg-4 mt-2">
         <a href="/Womensentries"><span class="badge  badge-primary w-100 p-3  " style="background-color: #f1f1f1;font-family: 'Noto Sans JP', sans-serif; 
     font-weight: 700;
     font-size: 16px; color:#00004d;box-shadow: 0 3px 2px #999;">Women's Entries</span></a>
       
        </div>
-        <div class=" col-lg-4 mt-1" class="bdg">
+        <div class=" col-lg-4 mt-2" class="bdg">
         <a href="/Indiancoastguard" ><span class="badge badge-primary  w-100 p-3 text-white " style="background-color: #078317;font-family: 'Noto Sans JP', sans-serif; 
     font-weight: 700;
     font-size: 16px; 
@@ -303,87 +494,76 @@ button[type=submit]{
       
        </div>
    </div>
+</div>
+<div class="container-fluid mt-5 ">
+<div class="row">
+  <div class="col-md-6">
+ <div class="home-update-box">
+ <h3>Defence Jobs</h3>
+ <ul>
+   <li>  <a href="/Airforce012023" target="_blank" rel="noopener noreferrer">Indian Air Force Intake 01/2023 Notification Out</a></li>
+    <li>  <a href="/Airforcewomens012023" target="_blank" rel="noopener noreferrer">Indian Air Force Womens Entry</a></li>
+  <li>  <a href="https://rectt.bsf.gov.in/" target="_blank" rel="noopener noreferrer">BSF Head Constable Ministerial &amp; ASI Stenographer Recruitment 2022</a></li>
+  <li> <a href="https://recruitment.itbpolice.nic.in/" target="_blank" rel="noopener noreferrer">ITBP Assistant Commandant Recruitment 2022</a></li>
+  <li> <a href="https://joinindianarmy.nic.in/" target="_blank" rel="noopener noreferrer">Indian Army JAG 30 Recruitment 2022</a></li>
+ <li><a href="https://joinindianarmy.nic.in/" target="_blank" rel="noopener noreferrer">Indian Army NCC 53 Special Entry Scheme</a></li>
+ <li><a href="https://joinindianarmy.nic.in/" target="_blank" rel="noopener noreferrer">Indian Army SSC Tech 60(Men)&amp; 31(Women)Recuitment</a></li>
+ <li><a href="https://www.joinindiannavy.gov.in/" target="_blank" rel="noopener noreferrer">Indian Navy AgniVeer MR Recruitment 2022</a></li>
+ <li><a href="https://www.jointerritorialarmy.gov.in/home/login" target="_blank" rel="noopener noreferrer">Territorial Army Notification 2022 |TA PIB Officer Entry</a></li>
+ </ul>
+ </div>
+ </div>
+  <div class="col-md-6 mt-1">
+ <div class="home-update-box">
+ <h3>Admit Card/Results</h3>
+ <ul>
+  <li><a href="https://www.joinindiannavy.gov.in/en/account/account/state" target="_blank" rel="noopener noreferrer">Indian Navy SSR Admit Card 2022 Out</a></li>
+ <li><a href="https://afcat.cdac.in/afcatreg/signin" target="_blank" rel="noopener noreferrer">AFCAT (2)/2022 WRITTEN RESULT OUT</a></li>
+ <li><a href="https://img.majorkalshiclasses.com/images/file_1663932131140.pdf" target="_blank" rel="noopener noreferrer">CDS (2)/2022 WRITTEN RESULT OUT.</a></li>
+ <li><a href="https://upsc.gov.in/" target="_blank" rel="noopener noreferrer">NDA/NA (II) 2022 WRITTEN RESULT OUT</a></li>
+ <li><a href="https://upsc.gov.in" target="_blank" rel="noopener noreferrer">UPSC CDS2/2021 OTA FINAL RESULT</a></li>
+ <li><a href="https://Agnipathvayu.cdac.in" target="_blank" rel="noopener noreferrer">AgniVeer Airforce Intake 1/2022 Result Out</a></li>
+   </ul>
+ </div>
+ </div>
+  </div>
+</div>
+
 
 <div class="container-fluid mt-3" >
    <div  class="row " >
      <div class="col-md-6 ">
-       <div class="card text-center ">
-  <div class="card-header" style=" background: linear-gradient(#c8e5ff, #ffffff); border-color: #ddd;font-family: Arial,Helvetica,sans-serif; font-size: 20px; font-weight: 800">
-      Daily Defence News
+       <div class="card text-center h-80">
+  <div class="card-header" style=" border-color: #ddd;font-family: Arial,Helvetica,sans-serif; font-size: 20px; font-weight: 800;background-color:#120870;color:rgb(255, 253, 253)">
+     Latest Updates
   </div>
-  <div class="card-body"  style="box-shadow: 0 10px 16px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%) !important;
-">
-   <div style="text-align: left;">
-      <span style="font-family: 'Noto Sans JP', sans-serif;  font-weight: 600;font-size: 16px;margin-top:10px"> <img  src="New4.gif" width="7%" height="6%" ><a href="/MRAGANIVEER2022" style="text-decoration: none">भारतीय नोसेना अगनीवीर MR Vacancy 2022 Details</a> </span><br>
-      <span style="font-family: 'Noto Sans JP', sans-serif;  font-weight: 600;font-size: 16px;margin-top:10px"> <img  src="New4.gif" width="7%" height="6%" ><a href="/IAFAGANIVEER" style="text-decoration: none">भारतीय वायुसेना अगनिपथ योजना</a> </span><br>
-          <span style="font-family: 'Noto Sans JP', sans-serif;  font-weight: 600;font-size: 16px;margin-top:10px"><img  src="New4.gif" width="7%" height="6%" > <a href="/NAVYAGANIVEER" style="text-decoration: none">भारतीय नोसेना अगनिपथ योजना</a> </span><br>
-           <span style="font-family: 'Noto Sans JP', sans-serif;  font-weight: 600;font-size: 16px;margin-top:10px"> <img  src="New4.gif" width="7%" height="6%" ><a href="/ARMYAGANIVEER" style="text-decoration: none">भारतीय थलसेना अगनिपथ योजना</a> </span><br>
-     
-     
-    
-  </div>
-  <div class="card-footer text-muted mt-3">
-  Daily Updates
-  </div>
-</div>
-     </div>
-     </div>
- <br>
- <br>
-  <div class="col-md-6 mt-1">
-       <div class="card text-center ">
-  <div class="card-header" style=" background: linear-gradient(#c8e5ff, #ffffff); border-color: #ddd;font-family: Arial,Helvetica,sans-serif; font-size: 20px; font-weight: 800">
-     Important Updates
-  </div>
-  <div class="card-body"  style="box-shadow: 0 10px 16px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%) !important;
-">
-   <div style="text-align: left;">
-              
-     <span style="font-family: 'Noto Sans JP', sans-serif;  font-weight: 600;font-size: 16px;margin-top:10px"> <img  src="arrow.jpg" width="6%" height="4%" ><a href="/Womensentries" style="text-decoration: none">महिलाओं को NDA FORM भरने की मिली मंज़ूरी</a> </span><br>
-
-      <span style="font-family: 'Noto Sans JP', sans-serif;  font-weight: 600;font-size: 16px;margin-top:10px"> <img  src="arrow.jpg" width="6%" height="4%" ><a href="/NAVYAGANIVEER" style="text-decoration: none">Indian Navy Online Registration प्रक्रिया प्रारंभ</a> </span><br>
-      <span style="font-family: 'Noto Sans JP', sans-serif;  font-weight: 600;font-size: 16px;margin-top:10px"> <img  src="arrow.jpg" width="6%" height="4%" ><a href="/Aganipath" style="text-decoration: none"> अगनिपथ योजना संपूर्ण जानकारी|</a> </span><br>
-            
-  <div class="card-footer text-muted mt-3">
- All Important Posts 
-  </div>
-  </div>
-  
-</div>
-     </div>
-
-   </div>
- </div>
- <div class="row mt-3">
-<div class="col-md-6">
- <h5 style=" color: rgb(50 62 119); font-family: Arial,Helvetica,sans-serif; font-size: 30px; font-weight: 800; 
-   text-shadow: 2px 2px 8px #00e1ff; text-align:center; letter-spacing: 0.1rem;margin-top: 1rem"> Latest Updates(Videos) </h5><br>
- 
-<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="card-body"  style="box-shadow: 0 10px 16px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%) !important;">
+   <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-pause="false">
   <div class="carousel-inner" style="box-shadow: 0 10px 16px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%) !important;
 ">
     <div class="carousel-item active">
       <div class="videoWrapper">
-        <a href="https://youtu.be/UKLHouN0NQg" target="_blank"> <img  src="iafaganiveer.jpg" alt="girlsthumbnail" height="315" width="560">
-      <div class='video-overlay'>
-       <i class="fa fa-youtube-play bg-white" style="font-size:60px;color:red;"></i>
-     
+         <a href="https://youtu.be/3HJ9QEOthZY" target="_blank"> <img  src="ytiafnotification012023img.jpg" alt="girlsthumbnail" height="315" width="560">
+       <div class='video-overlay'>
+         {{!-- <i class="fa fa-youtube-play " style="font-size:60px;color:red;background-color:white;background: linear-gradient(80deg, #ff0000 50%, #0000ff 50%);"></i> 
+      --}}
+     <img src="ytlogo.jpg">
                                 </div>
     </div>
     </div>
     <div class="carousel-item">
       <div class="videoWrapper">
-               <a href="https://youtu.be/ZjZY57gjxr4" target="_blank"> <img  src="navyagniveer.jpg" alt="Navy aganiveer" height="315" width="560">
-      <div class='video-overlay'>
-       <i class="fa fa-youtube-play bg-white" style="font-size:60px;color:red"></i>
+                <a href="https://youtu.be/GFSuroBtWWY" target="_blank"> <img  src="ytwomenentryimg.jpg" alt="ytairforce" height="315" width="560">
+         <div class='video-overlay'>
+   <img src="ytlogo.jpg">
                                 </div>
     </div></div>
    
     <div class="carousel-item">
       <div class="videoWrapper">
-      <a href="https://youtu.be/LGbqwLPtRiA" target="_blank"> <img  src="armyaganiveer.jpg" alt="girlsthumbnail" height="315" width="560">
+      <a href="https://youtu.be/ZWsYZFloXQ4" target="_blank"> <img  src="ytnavyadmitcard.jpg" alt="navyadmitcard" height="315" width="560">
       <div class='video-overlay'>
-       <i class="fa fa-youtube-play bg-white " style="font-size:60px;color:red;"></i>
+      <img src="ytlogo.jpg">
                                 </div>
      </div></div>
   </div>
@@ -395,35 +575,44 @@ button[type=submit]{
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
+</div> 
+  <div class="card-footer text-muted mt-3">
+Defence Current Updates (Watch Videos)
+  </div>
 </div>
-</div>
-
-<div class="col-md-6 ">
- <h5 style=" color: rgb(50 62 119); font-family: Arial,Helvetica,sans-serif; font-size: 30px; font-weight: 800; 
-   text-shadow: 2px 2px 8px #00e1ff;text-align:center; letter-spacing: 0.1rem;margin-top: 1rem"> Featured Videos</h5><br>
- 
-<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+     </div>
+     </div>
+ <br>
+ <br>
+  <div class="col-md-6 mt-1">
+       <div class="card text-center h-100">
+  <div class="card-header"style=" border-color: #ddd;font-family: Arial,Helvetica,sans-serif; font-size: 20px; font-weight: 800;background-color:#120870;color:rgb(255, 253, 253)">
+Featured Video
+  </div>
+  <div class="card-body"  style="box-shadow: 0 10px 16px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%) !important;
+">
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-pause="false">
   <div class="carousel-inner" style="box-shadow: 0 10px 16px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%) !important;
 ">
     <div class="carousel-item active">
       <div class="videoWrapper">
         <a href="https://youtu.be/glx3STikQAA" target="_blank"> <img  src="Featured03.jpg" alt="girlsthumbnail" height="315" width="560">
         <div class='video-overlay'>
-       <i class="fa fa-youtube-play bg-white" style="font-size:60px;color:red"></i>
+      <img src="ytlogo.jpg">
                                 </div>
     </div></div>
     <div class="carousel-item">
       <div class="videoWrapper">
         <a href="https://youtu.be/uVhkof_2GqY" target="_blank"> <img  src="featured02.jpg" alt="girlsthumbnail" height="315" width="560">
         <div class='video-overlay'>
-       <i class="fa fa-youtube-play bg-white" style="font-size:60px;color:red"></i>
+      <img src="ytlogo.jpg">
                                 </div>
     </div></div>
     <div class="carousel-item">
       <div class="videoWrapper">
         <a href="https://youtu.be/CWRGKZEmcIQ" target="_blank"> <img  src="featured01.jpg" alt="girlsthumbnail" height="315" width="560">
        <div class='video-overlay'>
-       <i class="fa fa-youtube-play bg-white" style="font-size:60px;color:red"></i>
+  <img src="ytlogo.jpg">
                                 </div>
     </div></div>
   </div>
@@ -435,11 +624,409 @@ button[type=submit]{
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
+</div> 
+
+  <div class="card-footer text-muted mt-3">
+  Featured Videos Cover most repeated Doubts
+  </div>
+  </div>
+  
 </div>
+     </div>
+
+   </div>
+   </div>
+<!-- Carousel wrapper -->
+ 
+{{!-- <div id="carouselMultiItemExample" class="carousel slide carousel-dark text-center " data-ride="carousel"  >
+ <div class="carousel-inner mt-5 ">
+    <div class="carousel-item active">
+        <div class="container ">
+        <div class="row">
+          <div class="col-lg-4 ">
+            <img class="rounded-circle shadow-1-strong mb-4"
+              src="somnath.jpg" alt="avatar"
+              style="width: 150px;" />
+            <h5 class="mb-3">Somnath</h5>
+            <p>Indian Navy</p>
+            <p class="text-muted">
+              <i class="fa fa-quote-left pe-2"></i>
+              Thank you Sir, Aapka Guidence kabhi nahi bhulunga
+              Aapki vajah se aaj verdi tak phunch gya hu.
+            </p>
+         
+          </div>
+           <div class="col-lg-4 d-none d-lg-block ">
+            <img class="rounded-circle shadow-1-strong mb-4"
+              src="sachin.jpg" alt="avatar"
+              style="width: 150px;" />
+            <h5 class="mb-3">Sachin Sahu</h5>
+            <p>Indian Air Force</p>
+            <p class="text-muted">
+              <i class="fa fa-quote-left pe-2"></i>
+              Thank You So much team for your help in 
+              every process and motivate me. I never 
+              Forgot your help.
+            </p>
+           
+          </div>
+           <div class="col-lg-4 d-none d-lg-block">
+            <img class="rounded-circle shadow-1-strong mb-4"
+              src="naveen.jpg" alt="avatar"
+              style="width: 150px;" />
+            <h5 class="mb-3">Naveen</h5>
+            <p>Indian Navy</p>
+            <p class="text-muted">
+              <i class="fa fa-quote-left pe-2"></i>
+              Sir mere mami, papa dono hi bachpan me gujar 
+              gaye , maine apni life naani ke ghar bitaee hai,
+              lekin aaj mai aapko kaise dhanyawad karu samjh nahi aa raha,
+              aapki vajah se mai apna sapna saakar kar saka bahut bahut dhanywad aapka.
+            </p>
+          
+          </div>
+          </div>
+          </div>
+    </div>
+    <div class="carousel-item">
+       <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <img class="rounded-circle shadow-1-strong mb-4"
+              src="kapil.jpg" alt="avatar"
+              style="width: 150px;" />
+            <h5 class="mb-3">Kapil Prajapati</h5>
+            <p>Indian Air Force</p>
+            <p class="text-muted">
+              <i class="fa fa-quote-left pe-2"></i>
+              Sir, I really thankful to you,  Your way of 
+               Explaining the things is very simple 
+               and your motivation , teaching is fabulous
+               Thanks to support Sir.
+            </p>
+           
+          </div>
+
+          <div class="col-lg-4 d-none d-lg-block">
+            <img class="rounded-circle shadow-1-strong mb-4"
+              src="abhishek.jpg" alt="avatar"
+              style="width: 150px;" />
+            <h5 class="mb-3">Abhishek</h5>
+            <p>Indian Navy</p>
+            <p class="text-muted">
+              <i class="fa fa-quote-left pe-2"></i>
+              Sir Aapne jo guidence di usse maine follow kiya,
+              or aaj mujhe uska result bhi mil gaya, aakhir 
+              mujhe vardi mil gaee aapki vajah se, aapke mock 
+              test next level ke hai sir
+            </p>
+           
+          </div>
+
+          <div class="col-lg-4 d-none d-lg-block">
+            <img class="rounded-circle shadow-1-strong mb-4"
+              src="pradeep.jpg" alt="avatar"
+              style="width: 150px;" />
+            <h5 class="mb-3">Pradeep</h5>
+            <p>Indian Air Force</p>
+            <p class="text-muted">
+              <i class="fa fa-quote-left pe-2"></i>
+             Thank you so much team for your support,
+             without your support i couldn't clear my 
+             Physical and GD Process. Thanks team
+            </p>
+          </div>
+          </div> 
+        </div>
+      </div>
+     <div class="carousel-item">
+       <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <img class="rounded-circle shadow-1-strong mb-4"
+              src="vaibhav.jpg" alt="avatar"
+              style="width: 150px;" />
+            <h5 class="mb-3">Vaibhav</h5>
+            <p>Indian Coast Guard</p>
+            <p class="text-muted">
+              <i class="fa fa-quote-left pe-2"></i>
+              Sir aapke mock test lagaye the maine 
+              vaha se bahut faayada mila, jis tarike 
+              se aap padhate hai bahut ache se samjh me aata hai,
+              Aapka bahut bahut shukriya.
+            </p>
+           
+          </div>
+
+          <div class="col-lg-4 d-none d-lg-block">
+            <img class="rounded-circle shadow-1-strong mb-4"
+              src="vaidika.jpg" alt="avatar"
+              style="width: 150px;" />
+            <h5 class="mb-3">Vaidika</h5>
+            <p>Student</p>
+            <p class="text-muted">
+              <i class="fa fa-quote-left pe-2"></i>
+              Sir aapne jo content karvaya hai usse bahar kuch nahi 
+              mila, Aapka style bilkul alag hai, bas ab result ki baari 
+              hai ,sir aapka bahut bahut dhanyawad help karne ke liye.
+            </p>
+           
+          </div>
+
+          <div class="col-lg-4 d-none d-lg-block">
+            <img class="rounded-circle shadow-1-strong mb-4"
+              src="sandeep.jpg" alt="avatar"
+              style="width: 150px;" />
+            <h5 class="mb-3">Sandeep</h5>
+            <p>Indian Air Force</p>
+            <p class="text-muted">
+              <i class="fa fa-quote-left pe-2"></i>
+             Maine Sir aapke Mock test attend kiye the last me 
+             vaha se bahut kuch sikhne ko mila thanks a lot 
+             Sir for you support.
+            </p>
+          
+          </div> 
+        </div>
+      </div>
+    </div>
+    </div>
+    
+    <a class="carousel-control-prev" href="#carouselMultiItemExample" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselMultiItemExample" role="button" data-slide="next">
+    <span class="carousel-control-next-icon " aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+  </div> --}}
+
+   <div class="container mt-5">
+            <div class="row">
+                <div class="splide">
+                    <div class="splide__track">
+                        <div class="splide__list">
+                            <div class="col-sm-4 splide__slide m-2 text-center">
+            <img class="rounded-circle shadow-1-strong mb-4"
+              src="somnath.jpg" alt="avatar"
+              style="width: 150px;" />
+            <h5 class="mb-3">Somnath</h5>
+            <p>Indian Navy</p>
+            <p class="text-muted">
+              <i class="fa fa-quote-left pe-2"></i>
+              Thank you Sir, Aapka Guidence kabhi nahi bhulunga
+              Aapki vajah se aaj verdi tak phunch gya hu.
+            </p>
+          </div>  
+           
+                            <div class="col-sm-4 splide__slide m-2 text-center">
+                                
+            <img class="rounded-circle shadow-1-strong mb-4"
+              src="sachin.jpg" alt="avatar"
+              style="width: 150px;" />
+            <h5 class="mb-3">Sachin Sahu</h5>
+            <p>Indian Air Force</p>
+            <p class="text-muted">
+              <i class="fa fa-quote-left pe-2"></i>
+              Thank You So much team for your help in 
+              every process and motivate me. I never 
+              Forgot your help.
+            </p>
+           
+          </div>
+                           
+             <div class="col-sm-4 splide__slide m-2 text-center">
+              <img class="rounded-circle shadow-1-strong mb-4"
+              src="naveen.jpg" alt="avatar"
+              style="width: 150px;" />
+            <h5 class="mb-3">Naveen</h5>
+            <p>Indian Navy</p>
+            <p class="text-muted">
+              <i class="fa fa-quote-left pe-2"></i>
+              Sir mere mami, papa dono hi bachpan me gujar 
+              gaye , maine apni life naani ke ghar bitaee hai,
+              lekin aaj mai aapko kaise dhanyawad karu samjh nahi aa raha,
+              aapki vajah se mai apna sapna saakar kar saka bahut bahut dhanywad aapka.
+            </p>
+                            </div>
+                            <div class="col-sm-4 splide__slide m-2 text-center">
+                                <img class="rounded-circle shadow-1-strong mb-4"
+              src="kapil.jpg" alt="avatar"
+              style="width: 150px;" />
+            <h5 class="mb-3">Kapil Prajapati</h5>
+            <p>Indian Air Force</p>
+            <p class="text-muted">
+              <i class="fa fa-quote-left pe-2"></i>
+              Sir, I really thankful to you,  Your way of 
+               Explaining the things is very simple 
+               and your motivation , teaching is fabulous
+               Thanks to support Sir.
+            </p>
+                            </div>
+                           <div class="col-sm-4 splide__slide m-2 text-center">
+                                <img class="rounded-circle shadow-1-strong mb-4"
+              src="abhishek.jpg" alt="avatar"
+              style="width: 150px;" />
+            <h5 class="mb-3">Abhishek</h5>
+            <p>Indian Navy</p>
+            <p class="text-muted">
+              <i class="fa fa-quote-left pe-2"></i>
+              Sir Aapne jo guidence di usse maine follow kiya,
+              or aaj mujhe uska result bhi mil gaya, aakhir 
+              mujhe vardi mil gaee aapki vajah se, aapke mock 
+              test next level ke hai sir
+            </p>
+                            </div>
+                             <div class="col-sm-4 splide__slide m-2 text-center">
+                                <img class="rounded-circle shadow-1-strong mb-4"
+              src="pradeep.jpg" alt="avatar"
+              style="width: 150px;" />
+            <h5 class="mb-3">Pradeep</h5>
+            <p>Indian Air Force</p>
+            <p class="text-muted">
+              <i class="fa fa-quote-left pe-2"></i>
+             Thank you so much team for your support,
+             without your support i couldn't clear my 
+             Physical and GD Process. Thanks team
+            </p>
+                            </div>
+                            <div class="col-sm-4 splide__slide m-2 text-center">
+                               <img class="rounded-circle shadow-1-strong mb-4"
+              src="vaibhav.jpg" alt="avatar"
+              style="width: 150px;" />
+            <h5 class="mb-3">Vaibhav</h5>
+            <p>Indian Coast Guard</p>
+            <p class="text-muted">
+              <i class="fa fa-quote-left pe-2"></i>
+              Sir aapke mock test lagaye the maine 
+              vaha se bahut faayada mila, jis tarike 
+              se aap padhate hai bahut ache se samjh me aata hai,
+              Aapka bahut bahut shukriya.
+            </p>
+                            </div>
+                     <div class="col-sm-4 splide__slide m-2 text-center">
+                                 <img class="rounded-circle shadow-1-strong mb-4"
+              src="vaidika.jpg" alt="avatar"
+              style="width: 150px;" />
+            <h5 class="mb-3">Vaidika</h5>
+            <p>Student</p>
+            <p class="text-muted">
+              <i class="fa fa-quote-left pe-2"></i>
+              Sir aapne jo content karvaya hai usse bahar kuch nahi 
+              mila, Aapka style bilkul alag hai, bas ab result ki baari 
+              hai ,sir aapka bahut bahut dhanyawad help karne ke liye.
+            </p> 
+                                      </div>
+                
+                <div class="col-sm-4 splide__slide m-2 text-center">
+                                <img class="rounded-circle shadow-1-strong mb-4"
+              src="sandeep.jpg" alt="avatar"
+              style="width: 150px;" />
+            <h5 class="mb-3">Sandeep</h5>
+            <p>Indian Air Force</p>
+            <p class="text-muted">
+              <i class="fa fa-quote-left pe-2"></i>
+             Maine Sir aapke Mock test attend kiye the last me 
+             vaha se bahut kuch sikhne ko mila thanks a lot 
+             Sir for you support.
+            </p>
+                                      </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+        new Splide(".splide", {
+          type: "loop",
+          perPage: 3,
+         
+          
+           autoplay: true,
+          breakpoints: {
+            
+            640: {
+              perPage: 1,
+              arrows: boolean =false,
+        
+            },
+            768: {
+              perPage: 2,
+            
+              },
+          },
+          focus: "center",
+          updateOnMove : true,
+          pagination: false,
+        }).mount();
+      });
+        </script>
+
+ {{!-- Counter Projects code  --}}
+     <div class="container mt-4  p-5" >
+   <div class="row text-center">
+   <div class="col-md-4 mt-2">
+   <div class="card" style="width: 20rem;">
+  <div class="card-body">
+  <i class='bx bxl-youtube fa-4x' ></i>
+<div class="counter " data-target="32000"></div>
+<p class="counter-text">Our You Tube Family</p>
+    
+  </div>
 </div>
- </div>
+   </div>
+   <div class="col-md-4 mt-2">
+   <div class="card" style="width: 20rem;">
+  <div class="card-body">
+    <i class="bx bxs-book-reader fa-4x "></i>
+     <div class="counter" data-target="8000"></div>
+ <p class="counter-text">Helped Students</p>
+  </div>
+</div>
+   </div>
+   <div class="col-md-4 mt-2">
+   <div class="card" style="width: 20rem;">
+  <div class="card-body">
+     <i class="fas fa-chalkboard-teacher fa-4x"></i>
+     <div class="counter"data-target="6000"></div>
+<p class="counter-text" >Teach Students</p>
+  </div>
+</div>
+   </div>
+   </div>
+     </div>
+
+
+     {{!-- End Counter Projects --}}
+
+ <script>
+     const counters=document.querySelectorAll('.counter');
+     counters.forEach((counter)=>{
+           counter.innerHTML=0;
+           
+        const updatecounter=()=>{
+            const targetcount=+counter.getAttribute('data-target'); //+str convert into number 
+            //console.log(targetcount);
+            const startingcount=Number(counter.innerHTML);
+            const incr=targetcount/100;
+            if(startingcount<targetcount){
+                counter.innerHTML=`${Math.round(startingcount+incr)}`;
+                setTimeout(updatecounter,100);
+            } else{
+                counter.innerHTML=targetcount;
+            }
+        }
+
+           updatecounter();
+     })
+     
+ </script>
    
-<div class="container"   >
+  {{!-- <div class="container"   >
       <h3 class="text-center " id="placedoubt" > PLACE YOUR DOUBT   </h3>
 
   <form action="/" id="forms" >
@@ -454,7 +1041,7 @@ button[type=submit]{
   <div class="form-group ">
     <label for="email" class="label">Mobile Number :</label>
     <input type="number" class="form-control nichevalaformcontrol" placeholder="Enter Your Whatsapp Number" id="phone">
-  </div>
+  </div> 
    <div class="form-group">
     <label for="doubts" class="label">Your Doubt :</label>
     <textarea type="text" class="form-control nichevalaformcontrol" placeholder="Enter Your Doubt Here " id="doubts" style="height: 200px; width: 400px"></textarea>
@@ -475,8 +1062,70 @@ function gotowhatsapp(){
   +"Doubt:"+doubt+"%0a";
   window.open(url,'_blank').focus();
 }
+</script> --}}
+{{!-- chatboot --}}
 
+
+<!-- Button trigger modal -->
+<div class="open-button">
+<i class='bx bxs-chat bx-burst fa-2x' data-toggle="modal" data-target="#modalContactForm" ></i>
+ <br>
+  <p class="askdoubt">Ask Doubt</p>
+  </div>
+
+<!-- Modal -->
+<div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Write to us</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-3">
+          <i class="fas fa-user prefix grey-text"></i>
+             <label data-error="wrong" data-success="right" for="form34">Your name</label>
+          <input type="text" id="Fname" class="form-control validate">
+       
+        </div>
+
+       <div class="md-form mb-3">
+          <i class="fas fa-user prefix grey-text"></i>
+             <label data-error="wrong" data-success="right" for="form34">Your Last name</label>
+          <input type="text" id="Lname" class="form-control validate">
+        </div>
+
+        <div class="md-form">
+         <i class='bx bxs-meh fa-1x'></i>
+          <label data-error="wrong" data-success="right" for="form8">Write Your Doubt</label> 
+          <textarea type="text" id="doubts" class="md-textarea form-control" rows="4" placeholder="Your Doubt...."></textarea>
+          
+        </div>
+      </div>
+      <div class="modal-footer d-flex justify-content-center ">
+       <button type="submit" class="btn btn-unique btn-primary ml-2" onclick="gotowhatsapp()" >Send <i class="fas fa-paper-plane-o ml-1"></i></button> 
+     </div>
+    </div>
+  </div>
+</div>
+
+ <script> 
+function gotowhatsapp(){
+  var fname=document.getElementById("Fname").value;
+  var lname=document.getElementById("Lname").value;
+  var doubt=document.getElementById("doubts").value;
+  var url="https://wa.me/917042268205?text= "
+  +"First name:"+fname+"%0a"
+  +"Last name:"+lname+"%0a"
+  +"Doubt:"+doubt+"%0a";
+  window.open(url,'_blank').focus();
+}
 </script>
+
+{{!-- end chatboot --}}
 </div>    
   <div class="footer row bg-dark mt-3">
   <marquee class="mt-1" direction="right"  behavior="alternate" scrollamount="6" onmouseover="this.stop();" onmouseout="this.start();" >
@@ -514,6 +1163,9 @@ function gotowhatsapp(){
   <li>Medical Preparation</li>
   </ul>
 </div>
+<p class="text-center text-white">
+    © Copyright 2022 Defence Champions. All rights reserved.
+</p>
   </div>
 <!--
   <script> confetti.start();  </script>

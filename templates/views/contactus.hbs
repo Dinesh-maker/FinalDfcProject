@@ -22,7 +22,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
 <style type="text/css">
 	*{
 		margin: 0;
@@ -39,7 +39,7 @@
          letter-spacing: 2px;
          color: #0e3742;
         text-transform: uppercase;
-        -webkit-box-reflect:below 1px linear-gradient(transparent,#0004);
+        /*-webkit-box-reflect:below 1px linear-gradient(transparent,#0004)*/;
         /*line-height: 0.70em;*/
         outline: none;
         animation: animate 5s linear infinite;
@@ -55,7 +55,7 @@
 		 }
 	   18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%
 		 {
-		 	color: #0fff;
+		 	color: rgb(255, 255, 255);
 		 	box-shadow: 0 0  10px #03bcf4,
 		 	0 0  20px #03bcf4,
 		 	0 0  40px #03bcf4,
@@ -64,9 +64,15 @@
 
 		 }
 	}
-	 .card{
-   	height: 34rem;
-   }
+  .sath{
+	margin-left:14rem;
+}
+ @media (min-width: 300px) and (max-width: 1000px){
+ 	.sath{
+ 		margin-left: 1rem;
+ 	}	 
+ }
+	/*
 	@media (min-width: 100px) and  (max-width: 1000px){
 		.sapna{
 			margin-left: 1rem;
@@ -103,12 +109,12 @@
  	 
  }
 
-@media (max-width: 630px){
+/*@media (max-width: 630px){
 	.socialmedia{
 		margin-left: 0px;
 		width: 30rem;
 	}
-}
+} 
 
 @media (max-width: 500px){
 	.socialmedia{
@@ -251,18 +257,127 @@
   #marquee{
     width:20rem;
   }
+} */
+.bt1 {
+  width: 70px;
+  height: 50px;
+  margin: 20px;
+  outline: none;
+  border: none;
+  background: rgb(214, 214, 214);
+  box-shadow: 5px 5px 10px #b6a9a9, -5px -5px 10px #ffffff;
+  border-radius: 50%;
+  transition: 0.2;
 }
+
+.bt1:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.bt1:hover::before {
+  content: "";
+  position: absolute;
+  height: 80%;
+  width: 80%;
+  background: rgb(214, 214, 214);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bt1:hover::before {
+  box-shadow: inset -9px -9px 22px 0 rgba(255, 255, 255, 1),
+    inset 7px 7px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.bt1:active {
+  box-shadow: inset 1px 1px 2px #babeec, inset -1px -1px 2px #fff;
+}
+.socialmedia {
+ display: flex;
+  margin-left: -1rem;
+  margin-top: 2rem;
+}
+@media (min-width: 900px) and (max-width: 1400px){
+ 	.footer{
+ 		margin-left: 150px;
+ 	}
+ 	 
+ }
+.bt1 img {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  transition: 0.2s;
+}
+
+.bt1 img:hover {
+  font-size: 30px;
+}
+
+.contact-us {
+    padding: 70px 0px;
+   
+}
+.section-title h2 {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    border-bottom: 5px solid #fdfdfd;
+    padding-bottom: 10px;
+    display: inline-block;
+    
+}
+.section-title p {
+    color: #e8e8e8;
+    margin-bottom: 30px;
+}
+.contact-us input,
+.contact-us textarea {
+    background: #fafafa;
+}
+.contact-us textarea {
+    min-height: 188px;
+    max-width: 100%;
+}
+.contact-us .map {
+    overflow: hidden;
+    border-radius: 4px;
+}
+
 </style>
 </head>
 <body>
 
-<div class="container-fluid text-center mt-4  ">
+<div class="container-fluid text-center mt-5  ">
 	
 	 <h5 id="h5"> <strong>" DFC का सपना हर घर मे हो फौजी अपना "</strong></h5>
 
 </div>
+{{!-- <div class="container mt-5">
+<div class="row">
+<div class="col-sm-6">
+<div class="card">
+  <div class="card-body" style="box-shadow: 0 10px 16px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%) !important;">
+    <img class="card-img-top" src="contactpageimg.jpg" alt="Card image cap">
+      </div>
+</div>
+</div>
+<div class="col-sm-6 bg-white">
+<p class="text"><q>Thank you for your interest in Defence Champions Platform. This platform is especially dedicated to 
+  Defence Cadets Who want to join indian defence Indian Air Force, Indian Navy, Indian Army.This platform continuously 
+  providing service since 2018. We Helped lot of students to reach their dream. Indian Defence is passionate field where
+  Student must be mentally as well as Physically Prepared.Lot of students get benefit from this platform to reach their 
+  destination You are the next one. Our Aim is to reach every student who belongs from villages,their background is weak,
+  financially weak and helped them to join Indian Defence. </q>
+</p>
+</div>
+</div>
+</div> --}}
 
-<div class="container mt-4 mb-3 ">
+  
+ {{!-- <div class="container mt-4 mb-3 ">
 	<div class="row">
 		<div class=" col-md-4">
 		<div class="card"  >
@@ -310,9 +425,82 @@
 </div>
 		</div>
 	</div>
-</div>
+</div>  --}}
 
-<div class=" justify-content-around align-items-center  mb-3 mt-3 p-4  "  >
+        <!-- Contact Us Section -->
+        <section class="contact-us">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7 ">
+                        <div class="section-title text-center">
+                            <h2>Contact Us</h2>
+                            <p><b>Thank you for your interest in Defence Champions Platform. We are Always Ready For Your Help. Ask Your Doubts Freely.</b></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-7">
+     {{!-- <form action="/" class="mb-4 mb-lg-0" >
+                     <div class="form-row">
+  <div class="form-group col-md-6 ">
+    <input type="text" class="form-control " placeholder="Enter Your First Name " id="Fname">
+  </div>
+   <div class="form-group col-md-6 ">
+    <input type="text" class="form-control " placeholder="Enter Your Last Name " id="Lname">
+  </div>
+  </div>
+  <div class="form-group ">
+    <input type="text" class="form-control " placeholder="Subject" id="subject">
+  </div> 
+   <div class="form-group">
+    <textarea type="text" class="form-control " placeholder="Enter Your Doubt Here " id="doubts" style="height: 200px; width: 400px"></textarea>
+  </div>
+  
+  <button type="submit" onclick="gotowhatsapp()" class="btn btn-light" >Submit</button>
+</form> --}} <form action="/" class="mb-4 mb-lg-0">
+                            <div class="form-row">
+                                <div class="col-md-6 form-group">
+                                    <input type="text"  class="form-control" id="Fname" placeholder="Your Name" />
+                                </div>
+                                <div class="col-md-6 form-group">
+                                    <input type="text" class="form-control"  id="Lname" placeholder="Your Last Name" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control"  id="subject" placeholder="Subject" />
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" id="doubts" placeholder="Type Message"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-light" onclick="gotowhatsapp()" >Contact Now</button>
+                        </form>
+                 
+                    </div>
+                      <script>
+      function gotowhatsapp(){
+  var fname=document.getElementById("Fname").value;
+  var lname=document.getElementById("Lname").value;
+   var subject=document.getElementById("subject").value;
+  var doubt=document.getElementById("doubts").value;
+  var url="https://wa.me/917042268205?text= "
+  +"First name:"+fname+"%0a"
+  +"Last name:"+lname+"%0a"
+  +"Subject:"+subject+"%0a"
+  +"Doubt:"+doubt+"%0a";
+  window.open(url,'_blank').focus();
+}
+                      </script>
+                    <div class="col-lg-5">
+                        <div class="map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28489.378513693086!2d75.80813107756649!3d26.802641423183914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396dc98e1f33788b%3A0x9a2730f2d96e4e45!2sPratap%20Nagar%2C%20Jaipur%2C%20Rajasthan!5e0!3m2!1sen!2sin!4v1664791447165!5m2!1sen!2sin" width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                             </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+{{!-- <div class=" justify-content-around align-items-center  mb-3 mt-3 p-4  "  >
   <marquee id="marquee" direction="right"  behavior="alternate" scrollamount="8" onmouseover="this.stop();" onmouseout="this.start();" >
    <a href="https://www.youtube.com/channel/UC4JlLJVmyitEpbiSUL_9ssA" target="_blank" style="color:white;font-family: Arial,Helvetica,sans-serif; font-size: 20px; font-weight: 800; text-decoration: none;margin-left: 2rem "> PLEASE SUBSCRIBE OUR CHANNEL AND PRESS BELL ICON  </a>
 </marquee>
@@ -351,7 +539,50 @@
 <a href="/nda"><button type="button " class="btn btn-success badges " >
     NDA <span class="badge badge-light"></span>
 </button></a>
+   </div> --}}
+    <h5 class="sath" style=" color: rgb(245, 244, 243); font-family: Arial,Helvetica,sans-serif; font-size: 30px; font-weight: 800; 
+   text-shadow: 2px 2px 8px #00e1ff;  letter-spacing: 0.1rem"> जीवन मे सूर्य सा प्रकाश हो बस DFC का साथ हो </h5> 
+<div class="container-fluid mt-3 p-5 foot">
+ <marquee  direction="right"  behavior="alternate" scrollamount="8" onmouseover="this.stop();" onmouseout="this.start();" >
+   <a href="https://www.youtube.com/channel/UC4JlLJVmyitEpbiSUL_9ssA" target="_blank" style="color:white;font-family: Arial,Helvetica,sans-serif; font-size: 20px; font-weight: 800; text-decoration: none"> PLEASE SUBSCRIBE OUR CHANNEL AND PRESS BELL ICON  </a>
+</marquee>
+<br><br>
+
+   <div class=" row footer">
+   
+    <div class="col-sm-6 socialmedia">
+    <button class="btn bt1  "  >
+    <a href="https://www.facebook.com/defencechampions">  <img src="Facebook.png" width="50" , height="50" ></a>
+    </button>
+    <button class="btn bt1">
+     <a href="https://www.instagram.com/rakesh_prajapati_official_123/" target="_blank"><img src="Instagram.png" width="50" , height="50"></a> 
+    </button>
+    <button class="btn bt1">
+     <a href="https://www.youtube.com/channel/UC4JlLJVmyitEpbiSUL_9ssA" target="_blank"> <img src="yt.png" width="50" , height="40"></a>
+    </button>
+     <button class="btn bt1">
+      <a href="https://t.me/defencechampions1" target="_blank"><img src="telegram.png" width="50" , height="50"> </a>
+    </button>
+    <button class="btn bt1">
+    <a href="https://chat.whatsapp.com/DHlnroPWKtrIkH8WInnWtI" target="_blank">  <img src="whatsapp.png" width="50" , height="50"> </a>
+    </button>
    </div>
+   <div class="col-sm-6 d-flex homes" style="height: 57px; margin-top: 3rem "  >
+   <a href="/">  <button type="button " class="btn btn-danger " >
+    Home <span class="badge badge-light"></span>
+</button></a>
+<a href="/indiannavy"><button type="button " class="btn btn-primary " style="margin-left: 1rem ">
+     Navy  <span class="badge badge-light"></span>
+</button></a>
+<a href="/nda"><button type="button " class="btn btn-success " style="margin-left: 1rem">
+    NDA <span class="badge badge-light"></span>
+</button></a>
+<a href="/indianairforce"><button type="button " class="btn btn-success " style="margin-left: 1rem">
+   IAF<span class="badge badge-light"></span>
+</button></a>
+   </div>
+ </div>
+</div>
 
 </body>
 </html>

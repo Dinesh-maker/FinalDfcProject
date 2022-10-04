@@ -197,6 +197,18 @@ app.get("/coastguard2022",(req,res)=>{
 app.get("/coastguard012023",(req,res)=>{
   res.render("coastguard012023");
 });
+app.get("/practice",(req,res)=>{
+  res.render("practice");
+});
+app.get("/Airforce012023",(req,res)=>{
+  res.render("Airforce012023");
+});
+app.get("/Airforcewomens012023",(req,res)=>{
+  res.render("Airforcewomens012023");
+});
+app.get("/Navywomensentry2022",(req,res)=>{
+  res.render("Navywomensentry2022");
+});
 app.post("/login", async (req,res)=>{
     try{
         console.log("Hii everone");
