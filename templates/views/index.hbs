@@ -183,7 +183,7 @@ button[type=submit]{
     width: 4rem;
     border-radius: 5px;
 }
- @media (min-width: 200px) and (max-width: 600px){
+ @media (min-width: 200px) and (max-width: 700px){
    #republicimg{
      width: 400px;
      height: 300px;
@@ -341,28 +341,28 @@ button[type=submit]{
 
 </head>
 <body>
-<div class="modal text-center mt-5" id="republicday" tabindex="-1" role="dialog" >
+ {{!-- <div class="modal text-center mt-5" id="republicday" tabindex="-1" role="dialog" >
   <div class="modal-dialog" role="document">
-    <div class="modal-content">
+    <div class="modal-content"> --}}
         {{!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"> --}}
           {{!-- <span aria-hidden="true">&times;</span> --}}
-        </button>
+        {{!-- </button>
       <div class="modal-body text-center" >
        <img id="republicimg" src="Airforceday2022.jpg" width="450px" height="350px"/>
       </div>
     </div>
   </div>
-</div>  
+</div>   --}}
 <script>
-  
+  /*
  $(document).ready(function(){
     $('#republicday').modal('show');
   })
   setTimeout(function(){
    $('#republicday').modal('hide');
 },6000) 
- 
-</script> 
+*/ 
+</script>  
      <header >
       {{!-- <img src="frontphoto.jpg" style="width: 100%; height:17rem"  > --}}
       <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel" data-interval="2500" data-pause="false">
@@ -1170,7 +1170,7 @@ function gotowhatsapp(){
 </p>
   </div>
 
-  <script> confetti.start();  </script>
-<script>setTimeout(function(){confetti.stop();},6000);</script> 
+ <!-- <script> confetti.start();  </script>
+<script>setTimeout(function(){confetti.stop();},6000);</script> -->
  </body>
 </html>
