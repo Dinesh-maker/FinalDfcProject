@@ -179,6 +179,9 @@ app.get("/IAFAGANIVEERADMITCARD",(req,res)=>{
 app.get("/IAFAGANIVEERRESULT2022",(req,res)=>{
   res.render("IAFAGANIVEERRESULT2022");
 });
+app.get("/IAFAGANIVEERPSL2022",(req,res)=>{
+  res.render("IAFAGANIVEERPSL2022");
+});
 app.get("/NAVYAGANIVEERONLINEFORM",(req,res)=>{
   res.render("NAVYAGANIVEERONLINEFORM");
 });
