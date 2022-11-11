@@ -33,7 +33,7 @@ app.get("/",(req,res)=>{
     res.render("index");
 })
 
-app.get("/Mock",auth , (req,res)=>{
+app.get("/Mock", (req,res)=>{
     //  console.log(`This is the Mock test page cookie ${req.cookies.jwt}`);//get the cookie value that is sewt when user login
   
     res.render("Mock");
