@@ -215,6 +215,9 @@ app.get("/Navywomensentry2022",(req,res)=>{
 app.get("/Coastguard012023admitcard",(req,res)=>{
   res.render("Coastguard012023admitcard");
 });
+app.get("/navy012023",(req,res)=>{
+  res.render("navy012023");
+});
 app.post("/login", async (req,res)=>{
     try{
         console.log("Hii everone");
