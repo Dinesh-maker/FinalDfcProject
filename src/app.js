@@ -218,6 +218,9 @@ app.get("/Coastguard012023admitcard",(req,res)=>{
 app.get("/navy012023",(req,res)=>{
   res.render("navy012023");
 });
+app.get("/navyMR012023",(req,res)=>{
+  res.render("navyMR012023");
+});
 app.post("/login", async (req,res)=>{
     try{
         console.log("Hii everone");
