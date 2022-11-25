@@ -221,6 +221,12 @@ app.get("/navy012023",(req,res)=>{
 app.get("/navyMR012023",(req,res)=>{
   res.render("navyMR012023");
 });
+app.get("/ssradmitcard012023",(req,res)=>{
+  res.render("ssradmitcard012023");
+});
+app.get("/navyresult012023",(req,res)=>{
+  res.render("navyresult012023");
+});
 app.post("/login", async (req,res)=>{
     try{
         console.log("Hii everone");
