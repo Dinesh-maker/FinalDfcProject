@@ -227,6 +227,15 @@ app.get("/ssradmitcard012023",(req,res)=>{
 app.get("/navyresult012023",(req,res)=>{
   res.render("navyresult012023");
 });
+app.get("/MRadmitcard012023",(req,res)=>{
+  res.render("MRadmitcard012023");
+});
+app.get("/NDA12023",(req,res)=>{
+  res.render("NDA12023");
+});
+app.get("/Passage",(req,res)=>{
+  res.render("Passage");
+});
 app.post("/login", async (req,res)=>{
     try{
         console.log("Hii everone");
