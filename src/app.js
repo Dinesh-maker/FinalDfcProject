@@ -236,6 +236,9 @@ app.get("/NDA12023",(req,res)=>{
 app.get("/Passage",(req,res)=>{
   res.render("Passage");
 });
+app.get("/Iafadmitcard012023",(req,res)=>{
+  res.render("Iafadmitcard012023");
+});
 app.post("/login", async (req,res)=>{
     try{
         console.log("Hii everone");
