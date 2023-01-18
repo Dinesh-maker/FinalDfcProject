@@ -239,6 +239,12 @@ app.get("/Passage",(req,res)=>{
 app.get("/Iafadmitcard012023",(req,res)=>{
   res.render("Iafadmitcard012023");
 });
+app.get("/coastguard022023",(req,res)=>{
+  res.render("coastguard022023");
+});
+app.get("/IAF012023result",(req,res)=>{
+  res.render("IAF012023result");
+});
 app.post("/login", async (req,res)=>{
     try{
         console.log("Hii everone");
