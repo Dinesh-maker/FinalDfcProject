@@ -362,11 +362,11 @@ app.post("/emailverification", async (req,res,next)=>{
     const email=req.body.email;
     const userObj= await  Register.findOne({email:email});
     var transporter = nodemailer.createTransport({
-        host: 'in10.fcomet.com',
+        host: 'server621.iseencloud.com',
         Port: 465,
         auth: {
-          user: 'dfc@defencechampions.com',
-          pass: 'dfc2021@'
+          user: 'mail@defencechampions.com',
+          pass: 'dfc@2023'
         }
 
       });
@@ -382,7 +382,7 @@ app.post("/emailverification", async (req,res,next)=>{
     console.log("mil gya user",link);
         
       var mailOptions = {
-        from: 'dfc@defencechampions.com',
+        from: 'mail@defencechampions.com',
         to: req.body.email,
         subject: 'Reset Password Link-DFC',
         html: `Click on this link : <a target="_blank" rel="external" href="${link}">Click Here</a>`
@@ -417,20 +417,21 @@ app.post("/sendemail", async (req,res,next)=>{
         console.log(emails[i]);
     }
     var transporter = nodemailer.createTransport({
-        host: 'mail.defencechampions.com',
+        host: 'server621.iseencloud.com',
         Port: 465,
         auth: {
           user: 'mail@defencechampions.com',
-          pass: 'Dinesh@2022'
+          pass: 'dfc@2023'
         }
     });
-    let from = `Defencechampions <dfc@defencechampions.com>`
+    let from = `Defencechampions <mail@defencechampions.com>`
         var mailOptions = {
             from: from,
             bcc: emails,
             subject: req.body.subject,
             html:atob(req.body.content) 
           };
+          Console.log("Ho jayega")
       transporter.sendMail(mailOptions, function(error, info){
         if (error) {
           console.log("Error aa gya",error);
