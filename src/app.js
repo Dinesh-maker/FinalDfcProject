@@ -245,6 +245,9 @@ app.get("/coastguard022023",(req,res)=>{
 app.get("/IAF012023result",(req,res)=>{
   res.render("IAF012023result");
 });
+app.get("/navy022023",(req,res)=>{
+  res.render("navy022023");
+});
 app.get("/Airforcenewvacancy022023",(req,res)=>{
   res.render("Airforcenewvacancy022023");
 });
