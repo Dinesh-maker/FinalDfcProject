@@ -251,6 +251,9 @@ app.get("/navy022023",(req,res)=>{
 app.get("/Airforcenewvacancy022023",(req,res)=>{
   res.render("Airforcenewvacancy022023");
 });
+app.get("/SSBBHARTI2023",(req,res)=>{
+  res.render("SSBBHARTI2023");
+});
 app.post("/login", async (req,res)=>{
     try{
         console.log("Hii everone");
