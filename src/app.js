@@ -254,6 +254,9 @@ app.get("/Airforcenewvacancy022023",(req,res)=>{
 app.get("/SSBBHARTI2023",(req,res)=>{
   res.render("SSBBHARTI2023");
 });
+app.get("/ads",(req,res)=>{
+  res.render("ads.txt");
+});
 app.post("/login", async (req,res)=>{
     try{
         console.log("Hii everone");
