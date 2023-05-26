@@ -257,6 +257,9 @@ app.get("/SSBBHARTI2023",(req,res)=>{
 app.get("/Armymesvacancy",(req,res)=>{
   res.render("Armymesvacancy");
 });
+app.get("/navaldockyard2023",(req,res)=>{
+  res.render("navaldockyard2023");
+});
 app.post("/login", async (req,res)=>{
     try{
         console.log("Hii everone");
