@@ -260,6 +260,9 @@ app.get("/Armymesvacancy",(req,res)=>{
 app.get("/navaldockyard2023",(req,res)=>{
   res.render("navaldockyard2023");
 });
+app.get("/Airforcenewvacancy012024",(req,res)=>{
+  res.render("Airforcenewvacancy012024");
+});
 app.post("/login", async (req,res)=>{
     try{
         console.log("Hii everone");
