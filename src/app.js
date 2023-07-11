@@ -263,6 +263,12 @@ app.get("/navaldockyard2023",(req,res)=>{
 app.get("/Airforcenewvacancy012024",(req,res)=>{
   res.render("Airforcenewvacancy012024");
 });
+app.get("/Airforceadmitcard012024",(req,res)=>{
+  res.render("Airforceadmitcard012024");
+});
+app.get("/navyresult22023",(req,res)=>{
+  res.render("navyresult22023");
+});
 app.post("/login", async (req,res)=>{
     try{
         console.log("Hii everone");
