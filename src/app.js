@@ -269,6 +269,9 @@ app.get("/Airforceadmitcard012024",(req,res)=>{
 app.get("/navyresult22023",(req,res)=>{
   res.render("navyresult22023");
 });
+app.get("/Armymesrecruitment2023",(req,res)=>{
+  res.render("Armymesrecruitment2023");
+});
 app.post("/login", async (req,res)=>{
     try{
         console.log("Hii everone");
